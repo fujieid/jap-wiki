@@ -1,0 +1,21 @@
+{
+  "name": "justauth.plus",
+  "version": "1.0.0",
+  "description": "",
+  "author": "yadong.zhang <yadong.zhang0415@gmail.com>",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^1.8.0",
+    "vuepress-plugin-homebadge": "^0.1.0"
+  },
+  "dependencies": {
+    "core-js": "^2.6.11",
+    "gitalk": "^1.7.0",
+    "vuepress-theme-antdocs": "^1.2.2"
+  },
+  "main": "index.js",
+  "license": "LGPL"
+}

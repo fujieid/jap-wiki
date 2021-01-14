@@ -1,0 +1,4 @@
+- 制作favicon：http://www.bitbug.net
+- emoji
+    - https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json
+    - https://gitmoji.dev/
