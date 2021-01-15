@@ -8,11 +8,9 @@ title: 如何使用
 
 ----
 
-## 使用 `jap-social`
-
 `jap-social` 是为了方便快速的集成第三方登录而添加的增强包，依赖并完全适配 [JustAuth](https://github.com/justauth/JustAuth) 支持的平台。
 
-### 添加依赖
+## 添加依赖
 
 ```xml
 <dependency>
@@ -22,7 +20,7 @@ title: 如何使用
 </dependency>
 ```
 
-### 实现 `JapUserService` 接口
+## 实现 `JapUserService` 接口
 
 `JapUserService` 是 JAP 调用（操作）开发者业务系统中用户的接口，`jap-social` 需要实现 `getByPlatformAndUid` 和 `createAndGetSocialUser` 方法。
 
@@ -97,7 +95,7 @@ public class JapSocialUserServiceImpl implements JapUserService {
 }
 ```
 
-### 创建 OAuth 应用
+## 创建 OAuth 应用
 
 以 `Gitee` 为例，创建 `OAuth` 应用的步骤参考 [Gitee 登录 - 申请应用](https://justauth.wiki/oauth/gitee.html#_1-%E7%94%B3%E8%AF%B7%E5%BA%94%E7%94%A8)
 
@@ -105,7 +103,7 @@ public class JapSocialUserServiceImpl implements JapUserService {
 
 ![](/_media/social/2c147a42.png)
 
-### 实现 controller
+## 实现 controller
 
 ```java
 package com.fujieid.jap.demo;
@@ -204,7 +202,7 @@ public class SocialController {
 ```
 :::
 
-### 测试登录
+## 测试登录
 
 访问 `http://127.0.0.1:8443/social/login/gitee` 
 
@@ -225,4 +223,3 @@ public class SocialController {
 
 其中 `additional` 节点为 `JustAuth` 的 [`me.zhyd.oauth.model.AuthUser`](https://gitee.com/yadong.zhang/JustAuth/blob/master/src/main/java/me/zhyd/oauth/model/AuthUser.java) 类
 :::
-## 使用 `jap-oauth2`

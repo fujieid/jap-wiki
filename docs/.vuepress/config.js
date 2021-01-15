@@ -143,7 +143,9 @@ module.exports = {
                     sidebarDepth: 1, // 侧边栏显示2级
                     children: [
                         ['/quickstart/explain', '名词解释'],
-                        ['/quickstart/how-to-use', '如何使用'],
+                        ['/quickstart/jap-simple', '使用 jap-simple'],
+                        ['/quickstart/jap-social', '使用 jap-social'],
+                        ['/quickstart/jap-oauth2', '使用 jap-oauth2'],
                         ['/quickstart/error_code', '异常代码']
                     ]
                 },
