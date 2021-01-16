@@ -25,6 +25,10 @@ title: 贡献者协议
 - 在提交 `issue` 时，请使用准确的、有实际意义的内容作为标题和描述，方便我们准确定位问题。
 - 在提交 `issue` 时，请说明 `JAP` 的版本号，并提供相关异常栈详细截图（**请勿截取自以为“很关键”的某段说明，务必截取全部内容**）
 
+::: tip
+强烈推荐阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)、[《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/~sgtatham/bugs-cn.html)、[《如何向开源项目提交无法解答的问题》](https://zhuanlan.zhihu.com/p/25795393)，更好的问题更容易获得帮助。
+:::
+
 ## Pull Request（PR）规范
 
 - 请先 `fork` 一份源码到自己的项目下，**不要直接在仓库下建分支**。

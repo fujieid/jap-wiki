@@ -12,8 +12,8 @@
 	<a target="_blank" href="https://search.maven.org/artifact/me.zhyd.oauth/JustAuth/1.15.9/jar">
 		<img src="https://img.shields.io/badge/Maven%20Central-1.15.9-blue" ></img>
 	</a>
-	<a target="_blank" href="https://gitee.com/yadong.zhang/JustAuth/blob/master/LICENSE">
-		<img src="https://img.shields.io/apm/l/vim-mode.svg?color=yellow" ></img>
+	<a target="_blank" href="https://gitee.com/fujieid/jap/blob/master/LICENSE">
+		<img src="https://img.shields.io/badge/license-LGPL%203.0-red" ></img>
 	</a>
 	<a target="_blank" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">
 		<img src="https://img.shields.io/badge/JDK-1.8+-green.svg" ></img>
@@ -23,9 +23,6 @@
 	</a>
 	<a target="_blank" href="https://justauth.wiki" title="参考文档">
 		<img src="https://img.shields.io/badge/Docs-latest-blueviolet.svg" ></img>
-	</a>
-	<a target="_blank" href="https://codecov.io/gh/justauth/JustAuth">
-		<img src="https://codecov.io/gh/justauth/JustAuth/branch/master/graph/badge.svg" />
 	</a>
 	<p align="center">
         <a target="_blank" href='https://gitee.com/yadong.zhang/JustAuth/stargazers'>
@@ -92,27 +89,8 @@ JAP 是**一款开源的认证中间件**，基于模块化设计，并且与业
 
 参考 [贡献者指南](/community/contributing)、 [贡献者行为准则](/community/code-of-conduct)
 
-### 提供bug或建议
-
-[Gitee Issues](https://gitee.com/yadong.zhang/JustAuth/issues) | [Github Issues](https://github.com/justauth/JustAuth/issues)
-
-
-### 贡献代码的步骤
-
-1. fork 本项目到自己的 repo
-2. 把 fork 过去的项目也就是你仓库中的项目 clone 到你本地
-3. 修改代码（`dev`分支）
-4. commit 后 push 到自己的仓库
-5. 发起 PR（pull request） 请求，提交到`dev`分支
-6. 等待合并
-
-::: warning 注意事项
-
-1. JustAuth 只接受集成 **OAuth2.0** 的平台
-2. 必须安装“**阿里编码规约**”插件，然后进行开发
-3. 提交 PR（pull request） 前请格式化好自己的代码
-4. 注释规范，自定义的方法一定要加上：方法说明、参数说明、返回值说明等
-
+::: tip
+提交问题前，强烈推荐阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)、[《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/~sgtatham/bugs-cn.html)、[《如何向开源项目提交无法解答的问题》](https://zhuanlan.zhihu.com/p/25795393)，更好的问题更容易获得帮助。
 :::
 
 ## 开源推荐
@@ -123,11 +101,5 @@ JAP 是**一款开源的认证中间件**，基于模块化设计，并且与业
 - `SpringBlade` 完整的线上解决方案（企业开发必备）: https://gitee.com/smallc/SpringBlade
 
 ## 赞赏
-
-转账请备注：**JAP 项目赞助** 
-
-| 支付宝  | 微信  |
-| :------------: | :------------: |
-| <img src="https://gitee.com/yadong.zhang/static/raw/master/qrcode/zfb_code.png" width="200"/> | <img src="https://gitee.com/yadong.zhang/static/raw/master/qrcode/wx_code.png" width="200" /> |
 
 更多赞助方式，请参考：[我要赞助](/sponsor)

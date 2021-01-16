@@ -58,7 +58,8 @@ public class JapSocialUserServiceImpl implements JapUserService {
      */
     @Override
     public JapUser getByPlatformAndUid(String platform, String uid) {
-        return null;
+        // FIXME 注意：此处仅作演示用，并没有判断 platform，实际业务系统中需要根据 platform 和 uid 进行获取唯一用户
+        return userDatas.stream().filter(user -> user.getUserId().equals(uid)).findFirst().orElse(null);
     }
 
     /**
@@ -94,6 +95,10 @@ public class JapSocialUserServiceImpl implements JapUserService {
     }
 }
 ```
+
+::: warning 特别注意
+上面示例代码中的 `FIXME` 注释部分，需要开发者自己实现
+:::
 
 ## 创建 OAuth 应用
 
@@ -204,9 +209,13 @@ public class SocialController {
 
 ## 测试登录
 
-访问 `http://127.0.0.1:8443/social/login/gitee` 
+启动测试项目后访问 `http://127.0.0.1:8443/social/login/gitee` 
+
+因为我已经在浏览器中登录过 gitee，所以 oauth 会跳过登录认证的流程，直接跳转到授权页面。
 
 ![](/_media/social/6a949b72.png)
+
+登录成功
 
 ![](/_media/social/48429bba.png)
 
