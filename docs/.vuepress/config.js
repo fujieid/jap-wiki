@@ -129,7 +129,7 @@ module.exports = {
                     {text: '用户权益', link: '/community/user-rights'},
                 ]
             },
-            {text: '🏠 官网', link: 'https://www.justauth.plus', target: '_blank'},
+            {text: '🏠 官网', link: 'https://jap.fujieid.com', target: '_blank'},
             {text: 'Gitee', link: 'https://gitee.com/yadong.zhang/JustAuth', target: '_blank'},
             {text: 'Github', link: 'https://github.com/justauth/JustAuth', target: '_blank'}
         ],
@@ -143,9 +143,10 @@ module.exports = {
                     sidebarDepth: 1, // 侧边栏显示2级
                     children: [
                         ['/quickstart/explain', '名词解释'],
-                        ['/quickstart/jap-simple', '使用 jap-simple'],
+                        // ['/quickstart/jap-simple', '使用 jap-simple'],
                         ['/quickstart/jap-social', '使用 jap-social'],
                         ['/quickstart/jap-oauth2', '使用 jap-oauth2'],
+                        ['/quickstart/jap-oidc', '使用 jap-oidc'],
                         ['/quickstart/error_code', '异常代码']
                     ]
                 },

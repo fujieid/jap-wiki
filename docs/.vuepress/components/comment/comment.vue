@@ -13,11 +13,11 @@
         name: 'comment',
         mounted() {
             const commentConfig = {
-                clientID: 'e58f172df200e88e266b',
-                clientSecret: 'ee22ce68934616f7de043a950cbdb7d613a03202 ',
-                repo: 'justauth-talk',
-                owner: 'zhangyd-c',
-                admin: ['zhangyd-c'],
+                clientID: '51b4dce978c91ab3d004',
+                clientSecret: '74859b32f6886b1c6da39269a187432b91b4ec4d ',
+                repo: 'jap-talk',
+                owner: 'fujieid',
+                admin: ['fujieid'],
                 id: location.hash,
                 // facebook-like distraction free mode
                 distractionFreeMode: false

@@ -1,62 +1,54 @@
-#### 
+######
+
 <p align="center">
-	<a href="https://justauth.wiki"><img src="/logo.png" width="300"></a>
+	<img src="/logo.png" width="300">
 </p>
 <p align="center">
-	<strong>Login, so easy!</strong>
-</p>
-<p align="center">
-	<strong>开箱即用的整合第三方登录的开源组件</strong>
+	<strong>Just auth into any app</strong>
 </p>
 <p align="center">
 	<a target="_blank" href="https://search.maven.org/artifact/me.zhyd.oauth/JustAuth/1.15.9/jar">
-		<img src="https://img.shields.io/badge/Maven%20Central-1.15.9-blue" ></img>
+		<img src="https://img.shields.io/badge/Maven%20Central-1.0.0-blue" ></img>
 	</a>
-	<a target="_blank" href="https://gitee.com/fujieid/jap/blob/master/LICENSE">
+	<a target="_blank" href="https://gitee.com/yadong.zhang/JustAuth/blob/master/LICENSE">
 		<img src="https://img.shields.io/badge/license-LGPL%203.0-red" ></img>
 	</a>
 	<a target="_blank" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">
 		<img src="https://img.shields.io/badge/JDK-1.8+-green.svg" ></img>
 	</a>
 	<a target="_blank" href="https://apidoc.gitee.com/yadong.zhang/JustAuth/" title="API文档">
-		<img src="https://img.shields.io/badge/Api%20Docs-1.15.9-orange" ></img>
+		<img src="https://img.shields.io/badge/Api%20Docs-1.0.0-orange" ></img>
 	</a>
 	<a target="_blank" href="https://justauth.wiki" title="参考文档">
 		<img src="https://img.shields.io/badge/Docs-latest-blueviolet.svg" ></img>
 	</a>
-	<p align="center">
-        <a target="_blank" href='https://gitee.com/yadong.zhang/JustAuth/stargazers'>
-          <img src="https://gitee.com/yadong.zhang/JustAuth/badge/star.svg?theme=gvp" alt='star'></img>
-        </a>
-        <a target="_blank" href='https://github.com/zhangyd-c/JustAuth'>
-            <img src="https://img.shields.io/github/stars/zhangyd-c/JustAuth.svg?style=social" alt="github star"></img>
-        </a>
-	</p>
+    <a target="_blank" href='https://gitee.com/fujieid/jap/stargazers'>
+      <img src="https://gitee.com/fujieid/jap/badge/star.svg" alt='star'></img>
+    </a>
 </p>
 <p align="center">
-	<strong>开源地址：</strong> <a target="_blank" href='https://gitee.com/yadong.zhang/JustAuth'>Gitee</a> | <a target="_blank" href='https://github.com/zhangyd-c/JustAuth'>Github</a>
+	<strong>开源地址：</strong> <a target="_blank" href='https://gitee.com/fujieid/jap'>Gitee</a> | <a target="_blank" href='https://gitee.com/fujieid/jap'>Github</a>
 </p>
 <p align="center">
-	<strong>官方网站：</strong> <a target="_blank" href='https://www.justauth.plus'>https://justauth.plus</a>
-</p>
-<p align="center">
-    <strong>QQ群：</strong>230017570
+	<strong>官方网站：</strong> <a target="_blank" href='https://jap.fujieid.com'>https://jap.fujieid.com</a>
 </p>
 
 ## JAP 是什么？
 
-JAP 非 IAM 也非 IDaaS，不与业务有任何耦合，它要做的是为所有需要身份认证的应用提供一套标准的解决方案，集成所有 APP。方便开发者无缝对接任何第三方应用或者自有系统。
-
 JAP 是**一款开源的认证中间件**，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中，就像集成 JA 一样，简单方便。
 
+JAP 要做的是为所有需要身份认证的应用提供一套标准的解决方案，集成所有 APP。方便开发者无缝对接任何第三方应用或者自有系统。
 
-- JAP 口号：Just auth for any app!
+- JAP 口号：Just auth into any app!
 - JAP 目标：让身份链接无处可藏
 - JAP 价值：方便开发者无缝对接任何第三方应用或者自有系统，提高开发效率，减少代码维护成本
 - JAP 愿景：以开源的方式，受惠于开源社区，赋能于开发者。使之成为开发者生态内必不可少的“基础设施”，以期形成新的技术标准。
 
+**ps：我们要让开发者可以基于 JAP 开发出自己的 IAM 或者 IDaaS 系统。**
+
 ## JAP 有什么特点？
 
+- 单点登录：一处登录，出处通行
 - 开箱即用：API 设计趋近于白话，类似并参考 JustAuth
 - 多平台：
   - 国内外数十家第三方平台（基于 JustAuth）
@@ -84,6 +76,24 @@ JAP 是**一款开源的认证中间件**，基于模块化设计，并且与业
 - 你们觉得传统的账号密码非常脆弱，所想让用户使用一次性的手机验证码或邮箱验证码进行登录
 - 你们企业希望联合其现有的企业用户目录，以允许员工使用其现有的企业凭据登录各种内部和第三方应用程序。
 - ...
+
+## JAP 常见问题有哪些？
+
+### JAP 不支持具体的业务操作吗？
+
+JAP 针对用户、应用等业务数据，只提供业务接口，不提供数据库层面的支持。JAP 要做的是为广大开发者提供一套技术标准，既然是标准，那就不能依赖于任何和具体业务相关的逻辑。不管你们的系统是用的 MySQL、Oracle、SQLlite、Redis、MongoDB还是其他的，JAP 通通不关心。JAP 对外提供标准接口，业务端只需要按需实现 JAP 的接口即可，这种设计能在最大程度上增加它的灵活性，使它不受限于某一具体的数据库实现方案。
+
+### JAP 可以用到企业级项目吗？
+
+当然，JAP 的价值就在于：方便开发者无缝对接任何第三方应用或者自有系统，提高开发效率，减少代码维护成本。所以对于企业来说，这是一个降本增效的功能。JAP 基于模块化开发，并且不侵入业务系统，可以十分方便的集成到企业内部各个系统或者统一的登录认证网关中。
+
+### JAP 可以商用吗？
+
+JAP 基于 [LGPL 3.0 协议](https://gitee.com/idaas/jap/blob/master/LICENSE)。商用分为以下两种情况：
+
+1. LGPL **允许商业软件通过类库引用(link)方式使用**而不需要开源商业软件的代码。这使得**采用 LGPL 协议的开源代码可以被商业软件作为类库引用并发布和销售**。
+2. 如果修改 LGPL 协议的代码或者衍生，则所有修改的代码，涉及修改部分的额外代码和衍生的代码都**必须采用 LGPL 协议**。因此 LGPL 协议的开源代码**不适合通过修改和衍生的方式做二次开发的商业软件采用**。
+
 
 ## 参与&贡献
 
