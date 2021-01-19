@@ -1,7 +1,7 @@
 ---
 title: 更新记录
 ---
-## 1.0.0
+## 1.0.0 (暂未发布，还在优化中)
 - 新增
     - `jap-simple` 普通账号密码登录
     - `jap-social` 社交帐号登录，基于 [JustAuth](https://gitee.com/yadong.zhang/JustAuth)
