@@ -167,7 +167,7 @@ public class OidcController {
 
 启动测试项目后访问 `http://127.0.0.1:8443/oidc/login/jai` 
 
-![](../.vuepress/public/_media/oidc/e4f48f5a.png)
+![](/_media/oidc/e4f48f5a.png)
 
 登录账号
 
@@ -175,7 +175,7 @@ public class OidcController {
 
 登录成功
 
-![](../.vuepress/public/_media/oidc/c17400bf.png)
+![](/_media/oidc/c17400bf.png)
 
 ::: tip
 注意此处登录的时候没有显示授权页面，是因为我们在创建应用的时候勾选了`自动批准`。对于其他平台可能没有此项配置，实际要以第三方平台支持的配置为主。

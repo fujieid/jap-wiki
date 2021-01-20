@@ -73,7 +73,13 @@ export default { // Highlighted
 ### Badge <Badge text="beta" type="warning"/> <Badge text="默认主题"/>
 
 [emoji](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
-<iframe src="https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json"></iframe>
+
+
+
+
+<ref-link/>
+
+<ref-link :link='`https://www.baidu.com`' :title="`百度`"/>
 
 ----
 <comment-comment/>

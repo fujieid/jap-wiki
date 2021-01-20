@@ -6,23 +6,16 @@ module.exports = {
     // 注入到当前页面的 HTML <head> 中的标签
     head: [
         ['link', {rel: 'icon', href: '/favicon.ico'}],
-        ['meta', {name: 'google-site-verification', content: 'tjusIIaEiX5v_c2v8wsZwUGUIHbYLaHk3MqNtv9ai5Y'}],
-        ['meta', {name: 'baidu-site-verification', content: 'code-lzLQR3pi2O'}],
+        ['meta', {name: 'baidu-site-verification', content: 'code-OmTOoMHYB6'}],
         ['meta', {name: 'description', content: 'JAP 是一款开源的认证中间件，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中。'}],
         ['meta', {name: 'keywords', content: 'JAP,JustAuth,第三方授权登录,OAuth,SAML,登录认证'}],
         ['script', {}, `
              var _hmt = _hmt || [];
             (function() {
               var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?565c1d41117fca3b8c86764d58446e76";
+              hm.src = "https://hm.baidu.com/hm.js?c02756c1bdee68556d5c6fc64ad2d77b";
               var s = document.getElementsByTagName("script")[0];
               s.parentNode.insertBefore(hm, s);
-
-              // 引入谷歌,不需要可删除这段
-              var hm1 = document.createElement("script");
-              hm1.src = "https://www.googletagmanager.com/gtag/js?id=UA-151202614-1";
-              var s1 = document.getElementsByTagName("script")[0]; 
-              s1.parentNode.insertBefore(hm1, s1);
               
               // gitter
               var hm1 = document.createElement("script");
@@ -34,13 +27,6 @@ module.exports = {
             ((window.gitter = {}).chat = {}).options = {
               room: 'yadong-zhang/justauth'
             };
-
-            // 谷歌加载,不需要可删除
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-        
-            gtag('config', 'UA-151202614-1');
         `]
     ],
     plugins: [
@@ -117,7 +103,7 @@ module.exports = {
                 ]
             },
             // { text: '📖 博客', link: '/blogs' },
-            {text: '💬 留言', link: '/gustbook'},
+            {text: '💬 留言', link: 'https://gitee.com/fujieid/jap/issues', target: '_blank'},
             {
                 text: '👪 社区',
                 ariaLabel: 'JAP 社区',
@@ -129,9 +115,7 @@ module.exports = {
                     {text: '用户权益', link: '/community/user-rights'},
                 ]
             },
-            {text: '🏠 官网', link: 'https://jap.fujieid.com', target: '_blank'},
-            {text: 'Gitee', link: 'https://gitee.com/yadong.zhang/JustAuth', target: '_blank'},
-            {text: 'Github', link: 'https://github.com/justauth/JustAuth', target: '_blank'}
+            {text: 'Gitee', link: 'https://gitee.com/fujieid/jap', target: '_blank'},
         ],
         sidebar: {
             '/': [
@@ -139,19 +123,23 @@ module.exports = {
                 ['about', '关于'],
                 {
                     title: '❤ 快速开始（必读）',
+                    path: '/quickstart/',
                     collapsable: false,
                     sidebarDepth: 1, // 侧边栏显示2级
                     children: [
+                        ['/quickstart/notice', '须知'],
                         ['/quickstart/explain', '名词解释'],
-                        // ['/quickstart/jap-simple', '使用 jap-simple'],
+                        ['/quickstart/jap-simple', '使用 jap-simple'],
                         ['/quickstart/jap-social', '使用 jap-social'],
                         ['/quickstart/jap-oauth2', '使用 jap-oauth2'],
                         ['/quickstart/jap-oidc', '使用 jap-oidc'],
+                        ['/quickstart/jap-sso', '使用 jap-sso'],
                         ['/quickstart/error_code', '异常代码']
                     ]
                 },
                 {
                     title: 'Q&A',
+                    path: '/qa/',
                     collapsable: false,
                     sidebarDepth: 1, // 侧边栏显示2级
                     children: [

@@ -4,22 +4,35 @@
 
 ----
 
-::: tip 永久免费
-JA 发展到如今，全靠社区小伙伴和各位开发者的支持，并且我们保证 JA **永远免费**
-:::
+## JAP 目前进度
+- 2021 年 01 月 12 日建立项目（闭源开发）：https://gitee.com/fujieid/jap
+- 2021 年 01 月 19 日正式开源：https://gitee.com/fujieid/jap
+- 开源后 1 小时获得红薯推荐
 
-但为了项目能够健康持续的发展下去，我们期望获得相应的支持。 如果你觉得 JA 确实有用，并且实实在在的帮助到了你，那么也请你支持一下，你可以通过下列的方法来支持我们的开发：
+![](/_media/sponsor/7aa1e361.png)
 
+- 截止 2021 年 01 月 20 日 12 时获得 star 80 个
+- 访问趋势如下
+
+![](/_media/sponsor/ad3c28a8.png)
+
+- 目前为 Gitee 开源今日热榜第一
+
+![](/_media/sponsor/3c9b9dd2.png)
+
+我们认为 JAP 的发展潜力是巨大的！
+  
 ## 帮助推广
 
-你可将 JustAuth 开源地址，转发到你的朋友圈、个人博客或者其他平台，让更多的人知道 JustAuth 这款好用的组件。
+你可将 JAP 开源地址，转发到你的朋友圈、个人博客或者其他平台，让更多的人知道 JAP 这款好用的组件。
 
-- https://gitee.com/yadong.zhang/JustAuth
-- https://github.com/justauth/JustAuth
+- https://gitee.com/fujieid/jap
+- https://github.com/fujieid/jap
 - 推广公众号    
-<img src="/wechat_mp_search.png" alt="码一码" style="max-width:600px"/>
-- 推广公众号文章，微信扫描上方二维码关注公众号“码一码”，选择文章后点击“在看”或者分享到朋友圈
+<img src="/wechat_mp.png" alt="JAI身份云" style="max-width:600px"/>
+- 推广公众号文章，微信扫描上方二维码关注公众号“JAI身份云”，选择文章后点击“在看”或者分享到朋友圈
 - 分享图片    
+<img src="/jap.jpeg" alt="jap.fujieid.com" style="max-width:300px"/>
 <img src="/ja.jpeg" alt="www.justauth.cn" style="max-width:300px"/>
 
 
@@ -56,16 +69,15 @@ JA 发展到如今，全靠社区小伙伴和各位开发者的支持，并且�
 - 1号广告位：本站侧边栏广告位（图片 + 文字循环滚动展示）<a-tag color="red">可视化，全屏轮播展示</a-tag>
 - 2号广告位：本站顶部导航“**特别赞助商**”（仅全局展示标题）<a-tag color="blue">全屏展示</a-tag>
 - 3号广告位：本站“[致谢](/thx)”栏目
-- 4号广告位：[JustAuth 官网 - 赞助商](https://www.justauth.cn/#sponsors)<a-tag color="blue">流量相对集中</a-tag>
-- 5号广告位：[Gitee 项目](https://gitee.com/yadong.zhang/JustAuth)和 [Github 项目](https://github.com/justauth/JustAuth)中的 README 文档<a-tag color="red">流量最集中</a-tag>
+- 4号广告位：[Gitee 项目](https://gitee.com/fujieid/jap)和 [Github 项目](https://github.com/fujieid/jap)中的 README 文档<a-tag color="red">流量最集中</a-tag>
 :::
 
 ::: tip 💡 赞助版本
 以下费用全部为月付，**随时可终止，但已付不退（请考虑清楚）**
 
 - 高级版（**500元/月**）：以上位置都包含，还包括不定时的公众号或者其他平台的文章推送
-- 标准版（**300元/月**）：2、3、4、5号广告位
-- 开发者版（**150元/月**）：5号广告位
+- 标准版（**300元/月**）：2、3、4号广告位
+- 开发者版（**150元/月**）：4号广告位
 - 基础版（**100元/月**）：2、3号广告位
 - 其他要求：如果你有其他需求，请在邮件中告知。
 :::
