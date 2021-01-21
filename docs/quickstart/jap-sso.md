@@ -64,7 +64,8 @@ public class JapSimpleUserServiceImpl implements JapUserService {
 }
 ```
 
-::: warning 注意 当启用 sso 功能时，必须实现 `getById` 方法
+::: warning 注意 
+当启用 sso 功能时，必须实现 `getById` 方法
 :::
 
 ## 启用 SSO
@@ -85,7 +86,7 @@ SimpleStrategy simpleStrategy = new SimpleStrategy(japUserService, new JapConfig
 ```
 
 ::: warning 请注意 
-- 请不要将 domain 设置为 .jap.com，将 domain 设置为 .jap.com 后会报错报错： `java.lang.IllegalArgumentException: An invalid domain [.jap.com] was specified for this cookie`
+- 请不要将 domain 设置为 .jap.com，将 domain 设置为 .jap.com 后会报错： `java.lang.IllegalArgumentException: An invalid domain [.jap.com] was specified for this cookie`
 - 原因：高版本 8.5版本 + tomcat 对 cookie 处理机制变更，原来设置 .x.com 应该修改为 x.com
 - 参考解决方案：[An invalid domain [.xxx] was specified for this cookie](https://gitee.com/baomidou/kisso/wikis/java.lang.IllegalArgumentException:-An-invalid-domain-%5B.x.com%5D-was-specified-for-this-cookie?sort_id=12454)
 :::
