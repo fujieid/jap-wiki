@@ -16,6 +16,34 @@ title: 如何使用
     <artifactId>jap-oauth2</artifactId>
     <version>{latest-version}</version>
 </dependency>
+
+<!--
+jap 已经使用 simple-json 解耦 json 类库，开发者只需要选择适合的依赖引入即可，支持依赖：
+    - jackson
+    - fastjson
+    - gson
+    - hutool-json
+关于 simple-json 更多使用方式参考：https://github.com/xkcoding/simple-json
+-->
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>fastjson</artifactId>
+    <version>1.2.73</version>
+</dependency>
+
+<!--
+jap 已经使用 simple-http 解耦 http 类库，开发者只需要选择适合的依赖引入即可，支持依赖：
+    - java 11 HttpClient
+    - OkHttp3
+    - apache HttpClient
+    - hutool-http
+关于 simple-http 更多使用方式参考：https://github.com/xkcoding/simple-http
+-->
+<dependency>
+    <groupId>cn.hutool</groupId>
+    <artifactId>hutool-http</artifactId>
+    <version>5.2.5</version>
+</dependency>
 ```
 
 ## 实现 `JapUserService` 接口

@@ -30,5 +30,6 @@ title: 我们需要什么?
 - 个人姓名、邮箱（邮箱或者手机二选一）
 - 个人开源首页（Gitee 或者 Github）
 - 个人的说明，比如做过哪些开源项目或者参与过哪些知名的开源项目
+- 个人技术栈，如：Java、Python、Node等
 
 发送邮件到：[support@fujieid.com](mailto:support@fujieid.com)
