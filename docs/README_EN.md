@@ -7,23 +7,23 @@ actionText: Getting Started
 actionLink: /about
 features:
 - title: Rich OAuth Platform
-  details: OAuth login support dozens of popular third-party platforms.
-- title: Support Traditional Way
-  details: Support username and password authentication and third API authentication.
+  details: Use OAuth login with popular platforms like github, qq, aliyun, etc.
+- title: Traditional Login Supported
+  details: Support username and password authentication and third party API authentication.
 - title: Multiple Programming Languages
-  details: Multi-language SDK, support any scene.
+  details: Multi-language SDK, integrate everywhere.
 - title: Provide OAuth 2.0 Server
   details: Built-in OAuth 2.0 Server implementation, easy to build OAuth Server.
-- title: Support LDAP 
+- title: LDAP Supported 
   details: Support LDAP authentication.
-- title: Support SAML
+- title: SAML Supported
   details: Support SAML authentication.
-- title: Modular Development
-  details: Development based on multiple modules, convenient for developers to add dependency.
+- title: Modularized Development
+  details: Easy to import with great modularity.
 - title: Single Sign On
   details: Built-in single sign-on, log in one, authenticated everywhere.
-- title: Adapt Old System
-  details: Support adaptation to existing authentication and authorization systems.
+- title: Zero Integration Cost
+  details: Adaptable to existing authentication and authorization systems.
 footer: Written by <a href="https://github.com/zhangyd-c" target="_blank">Yadong.Zhang</a> | <a href="http://beian.miit.gov.cn/" target="_blank">鲁ICP备17054970号-3</a>
 footerColumn: 3
 footerWrap: 
@@ -31,12 +31,12 @@ footerWrap:
   items:
   - title: JA Plus
     link: https://gitee.com/yadong.zhang/JustAuth
-    details: An open source authentication middleware, based on modular design, and highly decoupled from the business, it is very flexible to use, developers can effortlessly integrate JAP into any web application.
+    details: JA Plus(JAP) is an open source authentication middleware, it is highly decoupled from business code and has good modularity and flexiblity. Developers could integrate JAP into web applications effortlessly.
 - headline: Quick Links
   items:
   - title: Technical Support
     link: https://jap.fujieid.com
-    details: If you encounter problems, you can consult online or raise an Issue.
+    details: If you encounter problems, consult online or raise an Issue.
   - title: Community Support
     link: https://gitee.com/fujieid
     details: JAP Community, cover various libraries and peripheral projects.
