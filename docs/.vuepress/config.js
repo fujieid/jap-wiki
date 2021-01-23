@@ -3,6 +3,20 @@ module.exports = {
     port: 8088,
     title: 'JA Plus',
     description: 'JAP 是一款开源的认证中间件，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中。',
+    locales: {
+        // 键名是该语言所属的子路径
+        // 作为特例，默认语言可以使用 '/' 作为其路径。
+        '/': {
+            lang: 'zh-CN',
+            title: 'JA Plus',
+            description: 'Just auth for any app'
+        },
+        '/en/': {
+            lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
+            title: 'JA Plus',
+            description: 'Just auth for any app'
+        }
+    },
     // 注入到当前页面的 HTML <head> 中的标签
     head: [
         ['link', {rel: 'icon', href: '/favicon.ico'}],
@@ -115,16 +129,15 @@ module.exports = {
                     {text: '用户权益', link: '/community/user-rights'},
                 ]
             },
-            {text: 'Gitee', link: 'https://gitee.com/fujieid/jap', target: '_blank'},
+            {text: 'Gitee', link: 'https://gitee.com/fujieid/jap', target: '_blank'}
         ],
         sidebar: {
             '/': [
                 // ['demo', '例子'],
                 ['about', '关于'],
                 {
-                    title: '❤ 快速开始（必读）',
+                    title: '快速开始',
                     path: '/quickstart/',
-                    collapsable: false,
                     sidebarDepth: 1, // 侧边栏显示2级
                     children: [
                         ['/quickstart/notice', '须知'],
@@ -140,7 +153,6 @@ module.exports = {
                 {
                     title: 'Q&A',
                     path: '/qa/',
-                    collapsable: false,
                     sidebarDepth: 1, // 侧边栏显示2级
                     children: [
                         ['/qa/error', '异常相关'],

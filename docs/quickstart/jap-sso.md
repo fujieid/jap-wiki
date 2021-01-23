@@ -70,7 +70,7 @@ public class JapSimpleUserServiceImpl implements JapUserService {
 
 ## 启用 SSO
 
-以 [`jap-simple`]('/quickstart/jap-simple') 为例，在初始化 `SimpleStrategy` 时，默认方式为：
+以 [`jap-simple`](/quickstart/jap-simple) 为例，在初始化 `SimpleStrategy` 时，默认方式为：
 
 ```java
 SimpleStrategy simpleStrategy = new SimpleStrategy(japUserService, new JapConfig());
@@ -91,8 +91,8 @@ SimpleStrategy simpleStrategy = new SimpleStrategy(japUserService, new JapConfig
 - 参考解决方案：[An invalid domain [.xxx] was specified for this cookie](https://gitee.com/baomidou/kisso/wikis/java.lang.IllegalArgumentException:-An-invalid-domain-%5B.x.com%5D-was-specified-for-this-cookie?sort_id=12454)
 :::
 
-请自行修改 [`jap-social`]('/quickstart/jap-social')、[`jap-oauth2`]('/quickstart/jap-oauth2')
-、[`jap-oidc`]('/quickstart/jap-oidc') 模块的 `controller` 方法
+请自行修改 [`jap-social`](/quickstart/jap-social)、[`jap-oauth2`](/quickstart/jap-oauth2)
+、[`jap-oidc`](/quickstart/jap-oidc) 模块的 `controller` 方法
 
 ## 测试 SSO 效果
 
