@@ -68,6 +68,25 @@ title: 项目贡献者名单
         </a-card-meta>
       </a-card>
     </a-col>
+    <a-col :span="5">
+      <a-card hoverable size="small" style="width: 250px">
+        <img
+          slot="cover"
+          alt="example"
+          src="/contributors/zheng-yang.png"
+        />
+        <template slot="actions" class="ant-card-actions">
+            <a slot="title" href="https://loveyatou.top/" target="_blank"><a-icon type="home" /></a>
+            <a slot="title" href="https://gitee.com/harryleexyz" target="_blank"><a-icon type="gitlab" /></a>
+        </template>
+        <a-card-meta title="Zheng Yang" description="Nothing is impossible.">
+          <a-avatar
+            slot="avatar"
+            src="https://portrait.gitee.com/uploads/avatars/user/1660/4981222_harryleexyz_1578977984.png!avatar200"
+          />
+        </a-card-meta>
+      </a-card>
+    </a-col>
 </a-row>
 </template>
 
@@ -81,6 +100,7 @@ title: 项目贡献者名单
 
 <ref-link :link='`/community/weneed`' :title="`我们需要什么？`"/>
 <ref-link :link='`/community/members`' :title="`成员相关`"/>
+<ref-link :link='`/community/code-of-conduct`' :title="`贡献者行为准则`"/>
 <ref-link :link='`/community/contributing`' :title="`贡献者指南`"/>
 <ref-link :link='`/community/user-rights`' :title="`用户权益`"/>
 
