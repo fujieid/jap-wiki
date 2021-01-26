@@ -86,6 +86,62 @@ SimpleStrategy simpleStrategy = new SimpleStrategy(japUserService, new JapConfig
 ```
 
 ::: warning 请注意 
+- Strategy 初始化优先级要尽量高，以此项目[jap-demo](https://gitee.com/fujieid/jap-demo)为例：
+```java
+package com.fujieid.jap.demo;
+
+import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.simple.SimpleConfig;
+import com.fujieid.jap.simple.SimpleStrategy;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * 需要依赖 jap-simple 模块
+ *
+ * @author yadong.zhang (yadong.zhang0415(a)gmail.com)
+ * @version 1.0.0
+ * @date 2021/1/12 14:07
+ * @since 1.0.0
+ */
+@Controller
+@RequestMapping("/simple")
+public class SimpleController implements InitializingBean {
+
+    @Resource(name = "simple")
+    private JapUserService japUserService;
+    private SimpleStrategy simpleStrategy;
+
+    @GetMapping("/login")
+    public String toLogin(HttpServletRequest request) {
+        request.getSession().setAttribute("strategy", "simple");
+        return "login";
+    }
+
+    @PostMapping("/login")
+    public void renderAuth(HttpServletRequest request, HttpServletResponse response) {
+        simpleStrategy.authenticate(new SimpleConfig(), request, response);
+    }
+
+    /**
+     * 初始化 bean 时对 SimpleStrategy 进行初始化，适用于启用了 SSO 的情况，如果没有启用 SSO，则非强制使用该方式初始化
+     *
+     * @throws Exception
+     */
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        simpleStrategy = new SimpleStrategy(japUserService, JapConfigContext.getConfig());
+
+    }
+}
+```
 - 请不要将 domain 设置为 .jap.com，将 domain 设置为 .jap.com 后会报错： `java.lang.IllegalArgumentException: An invalid domain [.jap.com] was specified for this cookie`
 - 原因：高版本 8.5版本 + tomcat 对 cookie 处理机制变更，原来设置 .x.com 应该修改为 x.com
 - 参考解决方案：[An invalid domain [.xxx] was specified for this cookie](https://gitee.com/baomidou/kisso/wikis/java.lang.IllegalArgumentException:-An-invalid-domain-%5B.x.com%5D-was-specified-for-this-cookie?sort_id=12454)
@@ -165,6 +221,56 @@ OK， `jap-social`单点登录完成~~
 |  `logoutUrl` | 登录地址，默认为 `/logout` | 保留字段，jap 中暂时未用到  | 
 
 
+## 使用 redis 托管 session
+
+针对 springboot 项目，可以使用以下方式管理 session，增强 JAP
+
+### 添加相关依赖
+
+```xml
+<dependency>
+    <groupId>org.springframework.session</groupId>
+    <artifactId>spring-session-core</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework.session</groupId>
+    <artifactId>spring-session-data-redis</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-redis</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-pool2</artifactId>
+    <version>2.8.0</version>
+</dependency>
+```
+
+### 新增配置
+
+```text
+# 以下为 SSO 增强配置
+## 配置 sessionId 的 cookie domain
+server.servlet.session.cookie.domain=jap.com
+server.servlet.session.cookie.max-age=PT24H
+
+## 基于 spring-session-data-redis 实现 session 共享
+spring.session.store-type=redis
+spring.session.timeout=PT24H
+spring.session.redis.flush-mode=immediate
+
+## 基于 spring-boot-starter-data-redis 配置 redis，实现 session 的分布式存储
+spring.redis.database=1
+spring.redis.host=localhost
+spring.redis.port=6379
+spring.redis.password=123456ZHYD
+spring.redis.lettuce.pool.min-idle=0
+spring.redis.lettuce.pool.max-idle=8
+```
 
 
+## 官方推荐
 
+官方推荐使用 [jap-demo](https://gitee.com/fujieid/jap-demo) 示例项目进行测试。

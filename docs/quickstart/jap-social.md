@@ -232,3 +232,8 @@ public class SocialController {
 
 其中 `additional` 节点为 `JustAuth` 的 [`me.zhyd.oauth.model.AuthUser`](https://gitee.com/yadong.zhang/JustAuth/blob/master/src/main/java/me/zhyd/oauth/model/AuthUser.java) 类
 :::
+
+
+## 官方推荐
+
+官方推荐使用 [jap-demo](https://gitee.com/fujieid/jap-demo) 示例项目进行测试。

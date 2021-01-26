@@ -98,9 +98,12 @@ public class JapOauth2UserServiceImpl implements JapUserService {
      * @return JapUser
      */
     @Override
-    public JapUser createAndGetOauth2User(String platform, JSONObject userInfo) {
+    public JapUser createAndGetOauth2User(String platform, Map<String, Object> userInfo, Object tokenInfo) {
+        // FIXME 业务端可以对 tokenInfo 进行保存或其他操作
+        AccessToken accessToken = (AccessToken) tokenInfo;
+        System.out.println(JsonUtil.toJsonString(accessToken));
         // FIXME 注意：此处仅作演示用，不同的 oauth 平台用户id都不一样，此处需要开发者自己分析第三方平台的用户信息，提取出用户的唯一ID
-        String uid = userInfo.getString("userId");
+        String uid = (String) userInfo.get("userId");
         // 查询绑定关系，确定当前用户是否已经登录过业务系统
         JapUser japUser = this.getByPlatformAndUid(platform, uid);
         if (null == japUser) {
@@ -125,20 +128,23 @@ public class JapOauth2UserServiceImpl implements JapUserService {
 上面示例代码中的 `FIXME` 注释部分，需要开发者自己实现
 :::
 
-## 创建 OAuth 应用
+## 多种不同的授权方式
+
+### 授权码模式
+
+#### **创建 OAuth 应用**
 
 需要开发者自己去对应的平台创建 OAuth 应用，开发者还可以参考 [Gitee 登录 - 申请应用](https://justauth.wiki/oauth/gitee.html#_1-%E7%94%B3%E8%AF%B7%E5%BA%94%E7%94%A8) 这篇文章。
 
 
 本例以 [`JAI`](https://www.fujieid.com) 平台为例，创建一个 OAuth 应用，创建完成后的应用如下：
 
-![](/_media/oauth2/13ab3ef2.png)
 
 ![](/_media/oauth2/df62b3b6.png)
 
 ![](/_media/oauth2/128fce98.png)
 
-## 实现 controller
+#### **实现 controller**
 
 ```java
 import com.fujieid.jap.core.JapConfig;
@@ -180,9 +186,9 @@ public class Oauth2Controller {
                 .setClientId("t4h97wxykj6dg8c0sodeyj5zg0yi63te")
                 .setClientSecret("xxxxxx")
                 .setCallbackUrl("http://localhost:8443/oauth2/login/jai")
-                .setAuthorizationUrl("https://sign.fujieid.com/oauth/authorize")
-                .setTokenUrl("https://sign.fujieid.com/oauth/token")
-                .setUserinfoUrl("https://sign.fujieid.com/api/userinfo")
+                .setAuthorizationUrl("https://xxx.com/oauth/authorize")
+                .setTokenUrl("https://xxx.com/oauth/token")
+                .setUserinfoUrl("https://xxx.com/api/userinfo")
                 .setScopes(new String[]{"read", "write"})
                 .setResponseType(Oauth2ResponseType.code)
                 .setGrantType(Oauth2GrantType.authorization_code);
@@ -190,12 +196,142 @@ public class Oauth2Controller {
     }
 }
 ```
+### 隐式授权模式
+
+
+#### **创建 OAuth 应用**
+
+![](/_media/sponsor/dac63636.png)
+
+![](/_media/sponsor/8fb2a201.png)
+
+#### **实现 controller**
+
+```java
+import com.fujieid.jap.core.JapConfig;
+import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.oauth2.OAuthConfig;
+import com.fujieid.jap.oauth2.Oauth2GrantType;
+import com.fujieid.jap.oauth2.Oauth2ResponseType;
+import com.fujieid.jap.oauth2.Oauth2Strategy;
+import me.zhyd.oauth.utils.UuidUtils;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+/**
+ * 需要依赖 jap-oauth2 模块
+ *
+ * @author yadong.zhang (yadong.zhang0415(a)gmail.com)
+ * @version 1.0.0
+ * @date 2021/1/12 14:07
+ * @since 1.0.0
+ */
+@RestController
+@RequestMapping("/oauth2")
+public class Oauth2Controller {
+
+    @Resource(name = "oauth2")
+    private JapUserService japUserService;
+
+    @RequestMapping("/login/implicit/jai")
+    public void renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        Oauth2Strategy socialStrategy = new Oauth2Strategy(japUserService, new JapConfig());
+        OAuthConfig config = new OAuthConfig();
+        config.setPlatform("jai")
+                .setState(UuidUtils.getUUID())
+                .setClientId("xxx")
+                .setClientSecret("xxx")
+                .setCallbackUrl("http://sso.jap.com:8443/oauth2/login/implicit/jai")
+                .setAuthorizationUrl("https://xxx.com/oauth/authorize")
+                .setTokenUrl("https://xxx.com/oauth/token")
+                .setUserinfoUrl("https://xxx.com/api/userinfo")
+                .setScopes(new String[]{"read", "write"})
+                // 修改 ResponseType 为 Token 模式
+                .setResponseType(Oauth2ResponseType.token);
+        socialStrategy.authenticate(config, request, response);
+    }
+}
+```
+
+### 密码授权模式
+
+
+#### **创建 OAuth 应用**
+
+![](/_media/sponsor/ad4ba925.png)
+
+![](/_media/sponsor/f24e7054.png)
+
+#### **实现 controller**
+
+```java
+import com.fujieid.jap.core.JapConfig;
+import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.oauth2.OAuthConfig;
+import com.fujieid.jap.oauth2.Oauth2GrantType;
+import com.fujieid.jap.oauth2.Oauth2ResponseType;
+import com.fujieid.jap.oauth2.Oauth2Strategy;
+import me.zhyd.oauth.utils.UuidUtils;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+/**
+ * 需要依赖 jap-oauth2 模块
+ *
+ * @author yadong.zhang (yadong.zhang0415(a)gmail.com)
+ * @version 1.0.0
+ * @date 2021/1/12 14:07
+ * @since 1.0.0
+ */
+@RestController
+@RequestMapping("/oauth2")
+public class Oauth2Controller {
+
+    @Resource(name = "oauth2")
+    private JapUserService japUserService;
+
+    @RequestMapping("/login/password/jai")
+    public void renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        Oauth2Strategy socialStrategy = new Oauth2Strategy(japUserService, new JapConfig());
+        OAuthConfig config = new OAuthConfig();
+        config.setPlatform("jai")
+                .setState(UuidUtils.getUUID())
+                .setClientId("xxx")
+                .setClientSecret("xxx")
+                .setCallbackUrl("http://sso.jap.com:8443/oauth2/login/password/jai")
+                // 密码模式，不需要授权端链接
+//                .setAuthorizationUrl("https://xxx.com/oauth/authorize")
+                .setTokenUrl("https://xxx.com/oauth/token")
+                .setUserinfoUrl("https://xxx.com/api/userinfo")
+                .setScopes(new String[]{"read", "write"})
+                // GrantType 设为 password
+                .setGrantType(Oauth2GrantType.password)
+                // 指定账号密码
+                .setUsername("xxx")
+                .setPassword("xxx");
+        socialStrategy.authenticate(config, request, response);
+    }
+}
+```
 
 ## 测试登录
 
-启动测试项目后访问 `http://127.0.0.1:8443/social/login/jai` 
+启动测试项目后访问分别访问：
+- 授权码模式：`http://127.0.0.1:8443/social/login/jai`
+- 隐式授权模式：`http://127.0.0.1:8443/social/implicit/jai`
+- 密码模式：`http://127.0.0.1:8443/social/password/jai`
 
-![](/_media/oauth2/0a0b0cbe.png)
+![](/_media/sponsor/4f657553.png)
 
 登录账号
 
@@ -229,3 +365,7 @@ public class Oauth2Controller {
 - **`jap-oauth2` 能适配的平台，[`jap-social`](/quickstart/jap-social) 一样可以适配**，只不过，传递的参数不同而已。<a-tag color="blue">敲黑板</a-tag>
 - 但是，**[`jap-social`](/quickstart/jap-social) 能适配的平台，`jap-oauth2` 不一定可以适配**，原因如下。<a-tag color="blue">敲黑板</a-tag>
 - 这两个模块唯一的最大区别在于，**`jap-oauth2` 仅支持标准的 OAuth 2.0 协议**，类似于 `支付宝`、`Stack Overflow Key`、`Coding` 这种做了定制化的平台，`jap-oauth2`无法做到适配。（ps.好在[`JustAuth`](https://github.com/justauth/JustAuth)已经完成了这部分工作。）
+
+## 官方推荐
+
+官方推荐使用 [jap-demo](https://gitee.com/fujieid/jap-demo) 示例项目进行测试。

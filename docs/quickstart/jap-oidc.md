@@ -70,9 +70,12 @@ public class JapOauth2UserServiceImpl implements JapUserService {
      * @return JapUser
      */
     @Override
-    public JapUser createAndGetOauth2User(String platform, JSONObject userInfo) {
+    public JapUser createAndGetOauth2User(String platform, Map<String, Object> userInfo, Object tokenInfo) {
+        // FIXME 业务端可以对 tokenInfo 进行保存或其他操作
+        AccessToken accessToken = (AccessToken) tokenInfo;
+        System.out.println(JsonUtil.toJsonString(accessToken));
         // FIXME 注意：此处仅作演示用，不同的 oauth 平台用户id都不一样，此处需要开发者自己分析第三方平台的用户信息，提取出用户的唯一ID
-        String uid = userInfo.getString("userId");
+        String uid = (String) userInfo.get("userId");
         // 查询绑定关系，确定当前用户是否已经登录过业务系统
         JapUser japUser = this.getByPlatformAndUid(platform, uid);
         if (null == japUser) {
@@ -103,8 +106,6 @@ public class JapOauth2UserServiceImpl implements JapUserService {
 
 
 本例以 [`JAI`](https://www.fujieid.com) 平台为例，创建一个 OAuth 应用，创建完成后的应用如下：
-
-![](/_media/oauth2/13ab3ef2.png)
 
 ![](/_media/oidc/4a1180e0.png)
 
@@ -148,6 +149,7 @@ public class OidcController {
         request.getSession().setAttribute("strategy", "oidc");
         OidcStrategy oidcStrategy = new OidcStrategy(japUserService, new JapConfig());
         OidcConfig config = new OidcConfig();
+        // 配置 OIDC 的 Issue 链接
         config.setIssuer("xxxx")
                 .setPlatform("jai")
                 .setState(UuidUtils.getUUID())
@@ -180,7 +182,7 @@ public class OidcController {
 ::: tip
 注意此处登录的时候没有显示授权页面，是因为我们在创建应用的时候勾选了`自动批准`。对于其他平台可能没有此项配置，实际要以第三方平台支持的配置为主。
 :::
-
++
 ::: warning 注意
 `response data` 的格式为：
 
@@ -194,3 +196,8 @@ public class OidcController {
 
 其中 `additional` 节点第三方平台的用户信息。
 :::
+
+
+## 官方推荐
+
+官方推荐使用 [jap-demo](https://gitee.com/fujieid/jap-demo) 示例项目进行测试。

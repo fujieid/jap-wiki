@@ -138,7 +138,7 @@ module.exports = {
                 {
                     title: '快速开始',
                     path: '/quickstart/',
-                    sidebarDepth: 1, // 侧边栏显示2级
+                    sidebarDepth: 3, // 侧边栏显示2级
                     children: [
                         ['/quickstart/notice', '须知'],
                         ['/quickstart/explain', '名词解释'],

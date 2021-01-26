@@ -145,3 +145,8 @@ public class SimpleController {
 - ...
 
 如果你也有这方面的需求以及好的建议，请提交给我们：[https://gitee.com/fujieid/jap/issues/I2DVI5](https://gitee.com/fujieid/jap/issues/I2DVI5)
+
+
+## 官方推荐
+
+官方推荐使用 [jap-demo](https://gitee.com/fujieid/jap-demo) 示例项目进行测试。
