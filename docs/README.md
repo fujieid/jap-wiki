@@ -24,7 +24,7 @@ features:
   details: 内置单点登录功能，一处登录，处处同行
 - title: 完美适配旧系统
   details: 可以适配现有的登录系统
-footer: Written by <a href="https://github.com/zhangyd-c" target="_blank">Yadong.Zhang</a> | <a href="http://beian.miit.gov.cn/" target="_blank">鲁ICP备17054970号-3</a>
+footer: Written by <a href="https://github.com/zhangyd-c" target="_blank">Yadong.Zhang</a> | <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备2020044519号-2</a>
 footerColumn: 3
 footerWrap: 
 - headline: About
