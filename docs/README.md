@@ -10,6 +10,12 @@ features:
   details: 支持国内外数十家知名的第三方平台的 OAuth 登录。
 - title: 支持账号密码登录
   details: 支持自有系统账号和第三方 API 登录。
+- title: 模块开发
+  details: 基于多模块进行开发，方便开发者引用
+- title: 单点登录
+  details: 内置单点登录功能，一处登录，处处同行
+- title: 完美适配旧系统
+  details: 可以适配现有的登录系统
 - title: 多语言支持
   details: 支持多语言的 SDK，适应任何场景。
 - title: 提供 OAuth 2.0 Server
@@ -18,12 +24,6 @@ features:
   details: 支持 LDAP 认证。
 - title: 集成 SAML
   details: 支持 SAML 认证。
-- title: 模块开发
-  details: 基于多模块进行开发，方便开发者引用
-- title: 单点登录
-  details: 内置单点登录功能，一处登录，处处同行
-- title: 完美适配旧系统
-  details: 可以适配现有的登录系统
 footer: Written by <a href="https://github.com/zhangyd-c" target="_blank">Yadong.Zhang</a> | <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备2020044519号-2</a>
 footerColumn: 3
 footerWrap: 
@@ -65,4 +65,4 @@ footerWrap:
     details: 完整的线上解决方案（企业开发必备）
 ---
 
-
+<Notify :title="'欢迎光临'" :link="'https://gitee.com/fujieid/jap'" :desc="'JustAuth 升级版 JAP 强悍来袭！JAP 是一款开源的认证中间件，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中，就像集成 JA 一样，简单方便。'"/>

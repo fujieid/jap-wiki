@@ -7,8 +7,8 @@
 	<strong>Just auth into any app</strong>
 </p>
 <p align="center">
-	<a target="_blank" href="https://gitee.com/fujieid/jap">
-		<img src="https://img.shields.io/badge/Maven%20Central-未发布到中央仓库-blue" ></img>
+	<a target="_blank" href="https://search.maven.org/search?q=jap">
+		<img src="https://img.shields.io/badge/Maven%20Central-1.0.0%20alpha-blue" ></img>
 	</a>
 	<a target="_blank" href="https://gitee.com/yadong.zhang/JustAuth/blob/master/LICENSE">
 		<img src="https://img.shields.io/badge/license-LGPL%203.0-red" ></img>
@@ -16,8 +16,8 @@
 	<a target="_blank" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">
 		<img src="https://img.shields.io/badge/JDK-1.8+-green.svg" ></img>
 	</a>
-	<a target="_blank" href="https://gitee.com/fujieid/jap" title="API文档">
-		<img src="https://img.shields.io/badge/Api%20Docs-未发布-orange" ></img>
+	<a target="_blank" href="https://apidoc.gitee.com/fujieid/jap" title="API文档">
+		<img src="https://img.shields.io/badge/Api%20Docs-1.0.0%20alpha-orange" ></img>
 	</a>
 	<a target="_blank" href="https://jap.fujieid.com" title="开发文档">
 		<img src="https://img.shields.io/badge/Docs-latest-blueviolet.svg" ></img>
@@ -33,7 +33,7 @@
 	<strong>开源地址：</strong> <a target="_blank" href='https://gitee.com/fujieid/jap'>Gitee</a> | <a target="_blank" href='https://github.com/fujieid/jap'>Github</a>
 </p>
 <p align="center">
-	<strong>官方网站：</strong> <a target="_blank" href='https://jap.fujieid.com'>https://jap.fujieid.com</a>
+	<strong>官方网站（Wiki）：</strong> <a target="_blank" href='https://jap.fujieid.com'>https://jap.fujieid.com</a>
 </p>
 
 ## JAP 是什么？
