@@ -1,5 +1,5 @@
 ---
-title: 如何使用
+title: 如何使用 jap-simple
 ---
 
 # 目录

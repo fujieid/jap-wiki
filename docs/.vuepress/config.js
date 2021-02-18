@@ -47,7 +47,7 @@ module.exports = {
         ['homebadge', {
             selector: '.hero',
             repoLink: 'https://gitee.com/fujieid/jap/releases',
-            badgeLink: 'https://img.shields.io/badge/version-1.0.0--alpha-green',
+            badgeLink: 'https://img.shields.io/badge/version-1.0.0--alpha.1-green',
             badgeGroup: [
                 'https://img.shields.io/badge/Maven%20Central-1.0.0%20alpha-blue',
                 'https://img.shields.io/badge/license-LGPL%203.0-red',
@@ -79,7 +79,27 @@ module.exports = {
         // 启用页面滚动效果
         smoothScroll: true,
         backToTop: true,
-        logo: '/logo.png', // 侧边栏显示2级
+        logo: '/sidebar-logo.png', // 侧边栏显示2级
+
+        // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
+        repo: 'https://gitee.com/fujieid/jap',
+        // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
+        // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
+        repoLabel: '查看源码',
+
+        // 以下为可选的编辑链接选项
+
+        // 假如你的文档仓库和项目本身不在一个仓库：
+        docsRepo: 'https://gitee.com/fujieid/jap-wiki',
+        // 假如文档不是放在仓库的根目录下：
+        docsDir: 'docs',
+        // 假如文档放在一个特定的分支下：
+        docsBranch: 'master',
+        // 默认是 false, 设置为 true 来启用
+        editLinks: true,
+        // 默认为 "Edit this page"
+        editLinkText: '帮助我们改善此页面！',
+
         ads: {
             style: 2,
             speed: 3000,
@@ -112,6 +132,7 @@ module.exports = {
             ]
         },
         nav: [ // 导航栏配置
+            {text: 'Getting Started', link: '/about'},
             {
                 text: '💸 特别赞助商',
                 ariaLabel: '特别赞助商',
@@ -133,7 +154,21 @@ module.exports = {
                     {text: '用户权益', link: '/community/user-rights'},
                 ]
             },
-            {text: 'Gitee', link: 'https://gitee.com/fujieid/jap', target: '_blank'}
+            {
+                text: '❓ 常见问题',
+                items: [
+                    {text: '项目相关问题', link: '/qa/project'},
+                    {text: '异常相关问题', link: '/qa/error'},
+                    {text: '功能相关问题', link: '/qa/func'},
+                ]
+            },
+            {
+                text: '🚀 开源地址',
+                items: [
+                    {text: 'Gitee', link: 'https://gitee.com/fujieid/jap', target: '_blank'},
+                    {text: 'Github', link: 'https://github.com/fujieid/jap', target: '_blank'}
+                ]
+            },
         ],
         sidebar: {
             '/': [
@@ -151,16 +186,22 @@ module.exports = {
                         ['/quickstart/jap-oauth2', '使用 jap-oauth2'],
                         ['/quickstart/jap-oidc', '使用 jap-oidc'],
                         ['/quickstart/jap-sso', '使用 jap-sso'],
-                        ['/quickstart/error_code', '异常代码']
+                        ['/quickstart/jap-mfa', '使用 jap-mfa']
                     ]
                 },
                 {
-                    title: 'Q&A',
-                    path: '/qa/',
-                    sidebarDepth: 1, // 侧边栏显示2级
+                    title: '进阶使用',
+                    path: '/quickstart/',
+                    sidebarDepth: 3, // 侧边栏显示2级
                     children: [
-                        ['/qa/error', '异常相关'],
-                        ['/qa/func', '功能相关'],
+                        ['/quickstart/notice', '须知'],
+                        ['/quickstart/explain', '名词解释'],
+                        ['/quickstart/jap-simple', '使用 jap-simple'],
+                        ['/quickstart/jap-social', '使用 jap-social'],
+                        ['/quickstart/jap-oauth2', '使用 jap-oauth2'],
+                        ['/quickstart/jap-oidc', '使用 jap-oidc'],
+                        ['/quickstart/jap-sso', '使用 jap-sso'],
+                        ['/quickstart/error_code', '异常代码']
                     ]
                 },
                 ['contributors', '贡献者'],

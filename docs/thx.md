@@ -1,5 +1,6 @@
 ---
 title: 致谢
+editLink: false
 ---
 # 致谢
 

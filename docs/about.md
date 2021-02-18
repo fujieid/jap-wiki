@@ -8,7 +8,7 @@
 </p>
 <p align="center">
 	<a target="_blank" href="https://search.maven.org/search?q=jap">
-		<img src="https://img.shields.io/badge/Maven%20Central-1.0.0%20alpha-blue" ></img>
+		<img src="https://img.shields.io/badge/Maven%20Central-1.0.0-blue" ></img>
 	</a>
 	<a target="_blank" href="https://gitee.com/yadong.zhang/JustAuth/blob/master/LICENSE">
 		<img src="https://img.shields.io/badge/license-LGPL%203.0-red" ></img>
@@ -17,7 +17,7 @@
 		<img src="https://img.shields.io/badge/JDK-1.8+-green.svg" ></img>
 	</a>
 	<a target="_blank" href="https://apidoc.gitee.com/fujieid/jap" title="API文档">
-		<img src="https://img.shields.io/badge/Api%20Docs-1.0.0%20alpha-orange" ></img>
+		<img src="https://img.shields.io/badge/Api%20Docs-1.0.0-orange" ></img>
 	</a>
 	<a target="_blank" href="https://jap.fujieid.com" title="开发文档">
 		<img src="https://img.shields.io/badge/Docs-latest-blueviolet.svg" ></img>
@@ -64,7 +64,7 @@ JAP 要做的是为所有需要身份认证的应用提供一套标准的解决�
 
 ## 适用于哪些场景？
 
-- 新项目立项，你们需要研发一套包含登录、认证的系统
+- 新项目立项，你们需要研发一套独立的、统一的、包含登录、认证的系统
 - 现有登录模块为自研，但是新一轮的技术规划中，你们想将登录认证模块重构，以更加灵活的架构适应后面的新需求，比如：集成 MFA 登录、集成 OAuth 登录等
 - 你们的项目太多，每个项目都需要登录认证模块，想解决这种重复劳动的问题
 - 从长远方面考虑，公司或组织或个人需要一套标准的、灵活的、功能全面的登录认证功能
@@ -79,24 +79,6 @@ JAP 要做的是为所有需要身份认证的应用提供一套标准的解决�
 - 你们觉得传统的账号密码非常脆弱，所想让用户使用一次性的手机验证码或邮箱验证码进行登录
 - 你们企业希望联合其现有的企业用户目录，以允许员工使用其现有的企业凭据登录各种内部和第三方应用程序。
 - ...
-
-## JAP 常见问题有哪些？
-
-### JAP 不支持具体的业务操作吗？
-
-JAP 针对用户、应用等业务数据，只提供业务接口，不提供数据库层面的支持。JAP 要做的是为广大开发者提供一套技术标准，既然是标准，那就不能依赖于任何和具体业务相关的逻辑。不管你们的系统是用的 MySQL、Oracle、SQLlite、Redis、MongoDB还是其他的，JAP 通通不关心。JAP 对外提供标准接口，业务端只需要按需实现 JAP 的接口即可，这种设计能在最大程度上增加它的灵活性，使它不受限于某一具体的数据库实现方案。
-
-### JAP 可以用到企业级项目吗？
-
-当然，JAP 的价值就在于：方便开发者无缝对接任何第三方应用或者自有系统，提高开发效率，减少代码维护成本。所以对于企业来说，这是一个降本增效的功能。JAP 基于模块化开发，并且不侵入业务系统，可以十分方便的集成到企业内部各个系统或者统一的登录认证网关中。
-
-### JAP 可以商用吗？
-
-JAP 基于 [LGPL 3.0 协议](https://gitee.com/idaas/jap/blob/master/LICENSE)。商用分为以下两种情况：
-
-1. LGPL **允许商业软件通过类库引用(link)方式使用**而不需要开源商业软件的代码。这使得**采用 LGPL 协议的开源代码可以被商业软件作为类库引用并发布和销售**。
-2. 如果修改 LGPL 协议的代码或者衍生，则所有修改的代码，涉及修改部分的额外代码和衍生的代码都**必须采用 LGPL 协议**。因此 LGPL 协议的开源代码**不适合通过修改和衍生的方式做二次开发的商业软件采用**。
-
 
 ## 参与&贡献
 

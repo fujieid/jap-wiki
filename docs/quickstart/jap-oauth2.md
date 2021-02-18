@@ -1,5 +1,5 @@
 ---
-title: 如何使用
+title: 如何使用 jap-oauth2
 ---
 
 # 目录
@@ -7,6 +7,8 @@ title: 如何使用
 [[toc]]
 
 ----
+
+`jap-oauth2` 是为了方便快速的集成所有支持标准 OAuth 2.0 协议的平台而添加的增强包。
 
 ## 添加依赖
 
@@ -53,16 +55,18 @@ jap 已经使用 simple-http 解耦 http 类库，开发者只需要选择适合
 ```java
 package com.fujieid.jap.demo.service;
 
-import com.alibaba.fastjson.JSONObject;
 import com.fujieid.jap.core.JapUser;
 import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.oauth2.token.AccessToken;
 import com.google.common.collect.Lists;
+import com.xkcoding.json.JsonUtil;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
- * 适用于 jap-oauth2 模块，实现 getByPlatformAndUid 和 createAndGetSocialUser 方法
+ * 适用于 jap-oauth2 模块，实现 getByPlatformAndUid 和 createAndGetSocialUser 方法，如果需要sso登录，则必须实现 getById 方法
  *
  * @author yadong.zhang (yadong.zhang0415(a)gmail.com)
  * @version 1.0.0
@@ -75,7 +79,7 @@ public class JapOauth2UserServiceImpl implements JapUserService {
     /**
      * 模拟 DB 操作
      */
-    private static List<JapUser> userDatas = Lists.newArrayList();
+    private static final List<JapUser> userDatas = Lists.newArrayList();
 
     /**
      * 根据第三方平台标识（platform）和第三方平台的用户 uid 查询数据库
