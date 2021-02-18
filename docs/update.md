@@ -9,6 +9,7 @@ editLink: false
 
 - `jap-mfa` 模块，实现 TOTP 验证
 - `JapUserStoreContextHolder` 中增加 `logout` 方法，一键退出登录，支持清除 Cookie、Session等
+- 添加单元测试
 
 ## 修改
 
@@ -16,11 +17,12 @@ editLink: false
 - 完善注释
 - 删除 `JapConfig` 中的 `options` 属性，同时在 `SocialConfig` 中增加 `justAuthConfig` 属性
 - `RememberMeDetailsUtils` 修改名称为 `RememberMeUtils`
+- `Oauth2Strategy#checkOauthConfig()` 和 `Oauth2Strategy#isCallback()` 方法提到了 `Oauth2Util` 类中
 
 ## 其他
 
 - 改进部分代码
-- 重构 `SimpleConfig` 类，将非必要配置项和业务逻辑内容，提出到工具类 `RememberMeUtils` 中
+- 重构 `SimpleConfig` 类，将非必要配置项和业务逻辑内容，移到到工具类 `RememberMeUtils` 中
 
 
 ## v1.0.0-alpha.1（2021-02-01）
