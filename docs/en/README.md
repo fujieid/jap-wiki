@@ -35,7 +35,7 @@ footerWrap:
 - headline: Quick Links
   items:
   - title: Technical Support
-    link: https://jap.fujieid.com
+    link: https://justauth.plus
     details: If you encounter problems, consult online or raise an Issue.
   - title: Community Support
     link: https://gitee.com/fujieid

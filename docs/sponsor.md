@@ -37,7 +37,7 @@ editLink: false
 <img src="/wechat_mp.png" alt="JAI身份云" style="max-width:600px"/>
 - 推广公众号文章，微信扫描上方二维码关注公众号“JAI身份云”，选择文章后点击“在看”或者分享到朋友圈
 - 分享图片    
-<img src="/jap.jpeg" alt="jap.fujieid.com" style="max-width:300px"/>
+<img src="/jap.jpeg" alt="justauth.plus" style="max-width:300px"/>
 <img src="/ja.jpeg" alt="www.justauth.cn" style="max-width:300px"/>
 
 

@@ -35,7 +35,7 @@ footerWrap:
 - headline: Quick Links
   items:
   - title: 技术支持
-    link: https://jap.fujieid.com
+    link: https://justauth.plus
     details: 遇到问题，可以在线咨询，或者提 Issue
   - title: 社区配套
     link: https://gitee.com/fujieid

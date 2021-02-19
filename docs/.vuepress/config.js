@@ -46,15 +46,16 @@ module.exports = {
     plugins: [
         ['homebadge', {
             selector: '.hero',
-            repoLink: 'https://gitee.com/fujieid/jap/releases',
-            badgeLink: 'https://img.shields.io/badge/version-1.0.0--alpha.1-green',
+            repoLink: 'https://github.com/fujieid/jap/releases',
+            badgeLink: 'https://img.shields.io/badge/version-1.0.0-green',
             badgeGroup: [
-                'https://img.shields.io/badge/Maven%20Central-1.0.0%20alpha-blue',
                 'https://img.shields.io/badge/license-LGPL%203.0-red',
                 'https://img.shields.io/badge/JDK-1.8+-green.svg',
-                'https://img.shields.io/badge/Api%20Docs-1.0.0%20alpha-orange',
+                'https://img.shields.io/badge/Api%20Docs-1.0.0-orange',
                 'https://img.shields.io/badge/Docs-latest-blueviolet.svg',
-                'https://gitee.com/fujieid/jap/badge/star.svg',
+                'https://codecov.io/gh/fujieid/jap/branch/master/graph/badge.svg?token=WmfmgwxtnJ',
+                'https://travis-ci.com/fujieid/jap.svg?branch=master&status=passed',
+                'https://img.shields.io/badge/Gitee%20Stars-218-red?style=social&logo=git',
                 'https://img.shields.io/github/stars/fujieid/jap?style=social'
             ]
         }]
