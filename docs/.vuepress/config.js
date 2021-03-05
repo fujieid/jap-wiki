@@ -27,7 +27,7 @@ module.exports = {
              var _hmt = _hmt || [];
             (function() {
               var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?c02756c1bdee68556d5c6fc64ad2d77b";
+              hm.src = "https://hm.baidu.com/hm.js?f71eac525bffaa9e543a90337ddeb24b";
               var s = document.getElementsByTagName("script")[0];
               s.parentNode.insertBefore(hm, s);
               
@@ -39,7 +39,7 @@ module.exports = {
             })();
             
             ((window.gitter = {}).chat = {}).options = {
-              room: 'yadong-zhang/justauth'
+              room: 'fujieid/JAP'
             };
         `]
     ],
@@ -47,15 +47,15 @@ module.exports = {
         ['homebadge', {
             selector: '.hero',
             repoLink: 'https://github.com/fujieid/jap/releases',
-            badgeLink: 'https://img.shields.io/badge/version-1.0.0-green',
+            badgeLink: 'https://img.shields.io/badge/version-1.0.1%20alpha-green',
             badgeGroup: [
                 'https://img.shields.io/badge/license-LGPL%203.0-red',
                 'https://img.shields.io/badge/JDK-1.8+-green.svg',
-                'https://img.shields.io/badge/Api%20Docs-1.0.0-orange',
+                'https://img.shields.io/badge/Api%20Docs-latest-orange',
                 'https://img.shields.io/badge/Docs-latest-blueviolet.svg',
                 'https://codecov.io/gh/fujieid/jap/branch/master/graph/badge.svg?token=WmfmgwxtnJ',
                 'https://travis-ci.com/fujieid/jap.svg?branch=master&status=passed',
-                'https://img.shields.io/badge/Gitee%20Stars-218-red?style=social&logo=git',
+                'https://gitee.com/fujieid/jap/badge/star.svg?theme=white',
                 'https://img.shields.io/github/stars/fujieid/jap?style=social'
             ]
         }]
@@ -83,7 +83,7 @@ module.exports = {
         logo: '/sidebar-logo.png', // 侧边栏显示2级
 
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-        repo: 'https://gitee.com/fujieid/jap',
+        repo: 'https://github.com/fujieid/jap',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
         repoLabel: '查看源码',
@@ -135,6 +135,28 @@ module.exports = {
         nav: [ // 导航栏配置
             {text: 'Getting Started', link: '/about'},
             {
+                text: '📖 新版文档',
+                items: [
+                    {text: '使用 jap-simple', link: '/quickstart/latest/jap-simple', target: '_blank'},
+                    {text: '使用 jap-social', link: '/quickstart/latest/jap-social', target: '_blank'},
+                    {text: '使用 jap-oauth2', link: '/quickstart/latest/jap-oauth2', target: '_blank'},
+                    {text: '使用 jap-oidc', link: '/quickstart/latest/jap-oidc', target: '_blank'},
+                    {text: '使用 jap-sso', link: '/quickstart/latest/jap-sso', target: '_blank'},
+                    {text: '使用 jap-mfa', link: '/quickstart/latest/jap-mfa', target: '_blank'},
+                ]
+            },
+            {
+                text: '📖 旧版文档',
+                items: [
+                    {text: '使用 jap-simple', link: '/quickstart/old/jap-simple', target: '_blank'},
+                    {text: '使用 jap-social', link: '/quickstart/old/jap-social', target: '_blank'},
+                    {text: '使用 jap-oauth2', link: '/quickstart/old/jap-oauth2', target: '_blank'},
+                    {text: '使用 jap-oidc', link: '/quickstart/old/jap-oidc', target: '_blank'},
+                    {text: '使用 jap-sso', link: '/quickstart/old/jap-sso', target: '_blank'},
+                    {text: '使用 jap-mfa', link: '/quickstart/old/jap-mfa', target: '_blank'},
+                ]
+            },
+            {
                 text: '💸 特别赞助商',
                 ariaLabel: '特别赞助商',
                 items: [
@@ -143,7 +165,7 @@ module.exports = {
                 ]
             },
             // { text: '📖 博客', link: '/blogs' },
-            {text: '💬 留言', link: 'https://gitee.com/fujieid/jap/issues', target: '_blank'},
+            {text: '💬 留言', link: 'https://github.com/fujieid/jap/issues', target: '_blank'},
             {
                 text: '👪 社区',
                 ariaLabel: 'JAP 社区',
@@ -181,30 +203,24 @@ module.exports = {
                     sidebarDepth: 3, // 侧边栏显示2级
                     children: [
                         ['/quickstart/notice', '须知'],
-                        ['/quickstart/explain', '名词解释'],
-                        ['/quickstart/jap-simple', '使用 jap-simple'],
-                        ['/quickstart/jap-social', '使用 jap-social'],
-                        ['/quickstart/jap-oauth2', '使用 jap-oauth2'],
-                        ['/quickstart/jap-oidc', '使用 jap-oidc'],
-                        ['/quickstart/jap-sso', '使用 jap-sso'],
-                        ['/quickstart/jap-mfa', '使用 jap-mfa']
+                        ['/quickstart/explain', '名词解释']
                     ]
                 },
-                {
-                    title: '进阶使用',
-                    path: '/quickstart/',
-                    sidebarDepth: 3, // 侧边栏显示2级
-                    children: [
-                        ['/quickstart/notice', '须知'],
-                        ['/quickstart/explain', '名词解释'],
-                        ['/quickstart/jap-simple', '使用 jap-simple'],
-                        ['/quickstart/jap-social', '使用 jap-social'],
-                        ['/quickstart/jap-oauth2', '使用 jap-oauth2'],
-                        ['/quickstart/jap-oidc', '使用 jap-oidc'],
-                        ['/quickstart/jap-sso', '使用 jap-sso'],
-                        ['/quickstart/error_code', '异常代码']
-                    ]
-                },
+                // {
+                //     title: '进阶使用',
+                //     path: '/quickstart/',
+                //     sidebarDepth: 3, // 侧边栏显示2级
+                //     children: [
+                //         ['/quickstart/notice', '须知'],
+                //         ['/quickstart/explain', '名词解释'],
+                //         ['/quickstart/jap-simple', '使用 jap-simple'],
+                //         ['/quickstart/jap-social', '使用 jap-social'],
+                //         ['/quickstart/jap-oauth2', '使用 jap-oauth2'],
+                //         ['/quickstart/jap-oidc', '使用 jap-oidc'],
+                //         ['/quickstart/jap-sso', '使用 jap-sso'],
+                //         ['/quickstart/error_code', '异常代码']
+                //     ]
+                // },
                 ['contributors', '贡献者'],
                 ['thx', '致谢'],
                 ['update', '更新记录'],

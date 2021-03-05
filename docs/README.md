@@ -2,7 +2,7 @@
 home: true
 heroImage: /logo.png
 heroText: JA Plus
-tagline: Just auth for any app
+tagline: Just auth into any app
 actionText: 立刻开始
 actionLink: /about
 features:
@@ -30,21 +30,21 @@ footerWrap:
 - headline: About
   items:
   - title: JA Plus
-    link: https://gitee.com/yadong.zhang/JustAuth
-    details: 一款开源的认证中间件，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中。
+    link: https://github.com/fujieid/jap
+    details: 一款开源的登录认证中间件，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中。
 - headline: Quick Links
   items:
   - title: 技术支持
-    link: https://justauth.plus
+    link: https://github.com/fujieid/jap/issues
     details: 遇到问题，可以在线咨询，或者提 Issue
   - title: 社区配套
-    link: https://gitee.com/fujieid
+    link: https://github.com/fujieid
     details: JAP 社区，涵盖各种类库、周边项目
   - title: Api Docs
     link: https://apidoc.gitee.com/fujieid/jap
     details: API Docs，适合开发人员查看
   - title: 需求收集
-    link: https://gitee.com/fujieid/jap/issues/I2DVI5
+    link: https://github.com/fujieid/jap/issues
     details: JustAuth 开发计划，收集用户需求
 - headline: 开源推荐
   items:
@@ -65,5 +65,5 @@ footerWrap:
     details: 完整的线上解决方案（企业开发必备）
 ---
 
-<Notify :title="'欢迎光临'" :link="'https://gitee.com/fujieid/jap'" :desc="'JustAuth 升级版 JAP 强悍来袭！JAP 是一款开源的认证中间件，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中，就像集成 JA 一样，简单方便。'"/>
+<Notify :title="'欢迎光临'" :link="'https://github.com/fujieid/jap'" :desc="'JustAuth 升级版 JAP 强悍来袭！JAP 是一款开源的登录认证中间件，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中，就像集成 JA 一样，简单方便。'"/>
 

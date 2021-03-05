@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" :title="title" :target="blank ? '_blank' : ''" class="ref-link">{{ title }}</a>
+  <a :href="link" :title="title" :target="blank ? '_blank' : ''" class="ref-link"> {{ title }}</a>
 </template>
 
 <script>
@@ -29,5 +29,6 @@ export default {
   border: 1px solid #ddd;
   border-radius: 4px;
   display: block;
+  background: white;
 }
 </style>

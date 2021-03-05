@@ -136,16 +136,6 @@ public class SimpleController {
 
 ![](/_media/simple/01384d5d.png)
 
-## 致开发者
-
-目前 `jap-simple` 模块实现的功能还非常简单，后面我们会增加以下功能：
-- 单点登录
-- remember me
-- 登录失败时的友好提示
-- ...
-
-如果你也有这方面的需求以及好的建议，请提交给我们：[https://gitee.com/fujieid/jap/issues/I2DVI5](https://gitee.com/fujieid/jap/issues/I2DVI5)
-
 
 ## 官方推荐
 

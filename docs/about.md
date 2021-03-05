@@ -8,16 +8,13 @@
 </p>
 <p align="center">
 	<a target="_blank" href="https://search.maven.org/search?q=jap">
-	  <img src="https://img.shields.io/badge/Maven%20Central-1.0.0-blue" ></img>
+	  <img src="https://img.shields.io/badge/Maven%20Central-1.0.1%20alpha-blue" ></img>
 	</a>
 	<a target="_blank" href="https://gitee.com/yadong.zhang/JustAuth/blob/master/LICENSE">
 	  <img src="https://img.shields.io/badge/license-LGPL%203.0-red" ></img>
 	</a>
-	<a target="_blank" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">
-	  <img src="https://img.shields.io/badge/JDK-1.8+-green.svg" ></img>
-	</a>
 	<a target="_blank" href="https://apidoc.gitee.com/fujieid/jap" title="API文档">
-	  <img src="https://img.shields.io/badge/Api%20Docs-1.0.0-orange" ></img>
+	  <img src="https://img.shields.io/badge/Api%20Docs-latest-orange" ></img>
 	</a>
 	<a target="_blank" href="https://justauth.plus" title="开发文档">
 	  <img src="https://img.shields.io/badge/Docs-latest-blueviolet.svg" ></img>
@@ -28,9 +25,14 @@
   <a target="_blank" href="https://travis-ci.com/fujieid/jap" title="开发codecov档">
 	  <img src="https://travis-ci.com/fujieid/jap.svg?branch=master&status=passed" ></img>
 	</a>
+	<a target="_blank" href="https://gitter.im/fujieid/JAP?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
+	  <img src="https://badges.gitter.im/fujieid/JAP.svg" ></img>
+	</a>
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/Gitee%20Stars-218-red?style=social&logo=git" ></img>
+  <a target="_blank" href='https://gitee.com/fujieid/jap/stargazers'>
+    <img src="https://gitee.com/fujieid/jap/badge/star.svg?theme=white" alt='star'></img>
+  </a>
   <a target="_blank" href='https://github.com/fujieid/jap/stargazers'>
     <img src="https://img.shields.io/github/stars/fujieid/jap?style=social" alt='star'></img>
   </a>
@@ -91,7 +93,7 @@ JAP 要做的是为所有需要身份认证的应用提供一套标准的解决�
 参考 [贡献者指南](/community/contributing)、 [贡献者行为准则](/community/code-of-conduct)
 
 ::: tip
-提交问题前，强烈推荐阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)、[《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/~sgtatham/bugs-cn.html)、[《如何向开源项目提交无法解答的问题》](https://zhuanlan.zhihu.com/p/25795393)，更好的问题更容易获得帮助。
+提交问题前，建议阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)、[《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/~sgtatham/bugs-cn.html)、[《如何向开源项目提交无法解答的问题》](https://zhuanlan.zhihu.com/p/25795393)，更好的问题更容易获得帮助。
 :::
 
 ## 开源推荐
@@ -101,12 +103,22 @@ JAP 要做的是为所有需要身份认证的应用提供一套标准的解决�
 - `pig` 宇宙最强微服务认证授权脚手架(架构师必备): [https://gitee.com/log4j/pig](https://gitee.com/log4j/pig)
 - `SpringBlade` 完整的线上解决方案（企业开发必备）: https://gitee.com/smallc/SpringBlade
 
-## 赞赏
+## 关注统计
 
-更多赞助方式，请参考：[我要赞助](/sponsor)
-
-## Stars 趋势图
+### Gitee
 
 <p align="center">
-    <a target="_blank" href='https://github.com/fujieid/jap'><img src="https://starchart.cc/fujieid/jap.svg"></a>
+    <a target="_blank" href='https://gitee.com/fujieid/jap'><img src="https://whnb.wang/img/fujieid/jap"></a>
 </p>
+
+### Github
+
+<p align="center">
+    <a target="_blank" href='https://gitee.com/fujieid/jap'><img src="https://starchart.cc/fujieid/jap.svg"></a>
+</p>
+
+### Product Hunt
+
+<a href="https://www.producthunt.com/posts/justauthplus?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-justauthplus" target="_blank">
+  <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=285597&theme=dark" alt="JustAuthPlus - Just auth into any app | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+</a>

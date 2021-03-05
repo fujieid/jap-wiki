@@ -7,25 +7,6 @@ editLink: false
 [[toc]]
 
 ----
-
-## JAP 目前进度
-- 2021 年 01 月 12 日建立项目（闭源开发）：https://gitee.com/fujieid/jap
-- 2021 年 01 月 19 日正式开源：https://gitee.com/fujieid/jap
-- 开源后 1 小时获得红薯推荐
-
-![](/_media/sponsor/7aa1e361.png)
-- 连续多日热榜第一
-- ~~截止 2021 年 01 月 20 日 12 时获得 star 80 个~~
-- ~~截止 2021 年 01 月 22 日 10 时获得 star 148 个~~
-- 截止 2021 年 01 月 26 日 13 时获得 star 180 个
-- 访问趋势如下
-
-![](/_media/sponsor/dc4345b4.png)
-- 已有6位开发者加入 JAP 组织
-
-![](/_media/sponsor/346215b5.png)
-
-**我们认为 JAP 的发展潜力是巨大的！**
   
 ## 帮助推广
 
@@ -33,12 +14,8 @@ editLink: false
 
 - https://gitee.com/fujieid/jap
 - https://github.com/fujieid/jap
-- 推广公众号    
-<img src="/wechat_mp.png" alt="JAI身份云" style="max-width:600px"/>
-- 推广公众号文章，微信扫描上方二维码关注公众号“JAI身份云”，选择文章后点击“在看”或者分享到朋友圈
 - 分享图片    
 <img src="/jap.jpeg" alt="justauth.plus" style="max-width:300px"/>
-<img src="/ja.jpeg" alt="www.justauth.cn" style="max-width:300px"/>
 
 
 ## 一次性小额赞助
@@ -72,7 +49,7 @@ editLink: false
 
 ::: tip 广告位
 - 1号广告位：本站侧边栏广告位（图片 + 文字循环滚动展示）<a-tag color="red">可视化，全屏轮播展示</a-tag>
-- 2号广告位：本站顶部导航“**特别赞助商**”（仅全局展示标题）<a-tag color="blue">全屏展示</a-tag>
+- 2号广告位：本站顶部导航“**特别赞助商**”（仅全局展示标题，可点击）<a-tag color="blue">全屏展示</a-tag>
 - 3号广告位：本站“[致谢](/thx)”栏目
 - 4号广告位：[Gitee 项目](https://gitee.com/fujieid/jap)和 [Github 项目](https://github.com/fujieid/jap)中的 README 文档<a-tag color="red">流量最集中</a-tag>
 :::

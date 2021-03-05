@@ -2,7 +2,7 @@
 home: true
 heroImage: /logo.png
 heroText: JA Plus
-tagline: Just auth for any app
+tagline: Just auth into any app
 actionText: Getting Started
 actionLink: /about
 features:
@@ -44,7 +44,7 @@ footerWrap:
     link: https://apidoc.gitee.com/fujieid/jap
     details: API Docs，convenient for developers to view.
   - title: Demand collection
-    link: https://gitee.com/fujieid/jap/issues/I2DVI5
+    link: https://github.com/fujieid/jap/issues
     details: JustAuth Plan，collecting user demands.
 - headline: Open Source Recommendation
   items:

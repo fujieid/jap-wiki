@@ -16,7 +16,7 @@ title: 贡献者协议
 
 ## 可以贡献哪些内容？
 
-你可以对代码、文档进行贡献，也可以对未关闭的 Issue 贡献解决方案。不知道如何贡献？你可以先参考 JAP 的 Issue 列表：[issues](https://gitee.com/fujieid/jap/issues)
+你可以对代码、文档进行贡献，也可以对未关闭的 Issue 贡献解决方案。不知道如何贡献？你可以先参考 JAP 的 Issue 列表：[issues](https://github.com/fujieid/jap/issues)
 
 ## Issue 规范
 
