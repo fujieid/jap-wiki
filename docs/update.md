@@ -3,6 +3,29 @@ title: 更新记录
 editLink: false
 ---
 
+# 目录
+
+[[toc]]
+
+----
+
+## v1.0.1-alpha.2（2021-03-**）
+
+- [jap-oidc] 优化`OidcStrategy#authenticate`方法，缓存 `OidcDiscoveryDto`，减少不必要的 http 请求
+- [jap-oidc] 优化 `OidcUtil` 代码，修复已知的 BUG
+
+
+## v1.0.1-alpha.1（2021-03-07）
+
+### Modified
+
+- 解决 `JapErrorCode` 描述错误的问题
+- 改进 `JapTokenHelper` 代码
+
+### PR
+
+- 合并 Gitee 的 PR [!8](https://gitee.com/fujieid/jap/pulls/8)
+
 ## v1.0.1-alpha（2021-03-05）
 
 支持前后端分离项目，[jap-demo-vue](https://gitee.com/fujieid/jap-demo-vue)

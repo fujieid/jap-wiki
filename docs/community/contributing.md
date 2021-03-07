@@ -16,7 +16,19 @@ title: 贡献者协议
 
 ## 可以贡献哪些内容？
 
-你可以对代码、文档进行贡献，也可以对未关闭的 Issue 贡献解决方案。不知道如何贡献？你可以先参考 JAP 的 Issue 列表：[issues](https://github.com/fujieid/jap/issues)
+你可以对以下内容进行贡献：
+
+- 修复bug（已打开的 Issue 或者是你独家发现的 BUG）
+- 完善代码注释
+- 添加单元测试
+- 代码逻辑优化
+- 新功能开发
+- 编写文档
+
+不知道如何贡献？你可以先参考 JAP 的 Issue 列表：
+
+- [gitee issues](https://gitee.com/fujieid/jap/issues)
+- [github issues](https://github.com/fujieid/jap/issues)
 
 ## Issue 规范
 
@@ -61,4 +73,8 @@ title: 贡献者协议
 
 参考：[https://docs.oracle.com/javase/1.5.0/docs/tooldocs/windows/javadoc.html](https://docs.oracle.com/javase/1.5.0/docs/tooldocs/windows/javadoc.html)
 
+## 其他
 
+- 编写完代码后，请自行格式化好代码格式。
+- 如果是修改的已有文件，请单独格式化自己修改的内容。不要随便格式化其他文件
+- 

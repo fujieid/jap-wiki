@@ -151,8 +151,10 @@ public class JapOauth2UserServiceImpl implements JapUserService {
 #### **实现 controller**
 
 ```java
-import com.fujieid.jap.core.JapConfig;
+import cn.hutool.core.util.URLUtil;
 import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.core.result.JapResponse;
+import com.fujieid.jap.demo.config.JapConfigContext;
 import com.fujieid.jap.oauth2.OAuthConfig;
 import com.fujieid.jap.oauth2.Oauth2GrantType;
 import com.fujieid.jap.oauth2.Oauth2ResponseType;
@@ -160,6 +162,8 @@ import com.fujieid.jap.oauth2.Oauth2Strategy;
 import me.zhyd.oauth.utils.UuidUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.RedirectView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -183,20 +187,29 @@ public class Oauth2Controller {
 
     @RequestMapping("/login/jai")
     public void renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        Oauth2Strategy socialStrategy = new Oauth2Strategy(japUserService, new JapConfig());
+        Oauth2Strategy oauth2Strategy = new Oauth2Strategy(japUserService, new JapConfig());
         OAuthConfig config = new OAuthConfig();
         config.setPlatform("jai")
                 .setState(UuidUtils.getUUID())
-                .setClientId("t4h97wxykj6dg8c0sodeyj5zg0yi63te")
-                .setClientSecret("xxxxxx")
-                .setCallbackUrl("http://localhost:8443/oauth2/login/jai")
-                .setAuthorizationUrl("https://xxx.com/oauth/authorize")
-                .setTokenUrl("https://xxx.com/oauth/token")
-                .setUserinfoUrl("https://xxx.com/api/userinfo")
+                .setClientId("xx")
+                .setClientSecret("xx")
+                .setCallbackUrl("http://sso.jap.com:8443/oauth2/login/jai")
+                .setAuthorizationUrl("xx")
+                .setTokenUrl("xx")
+                .setUserinfoUrl("xx")
                 .setScopes(new String[]{"read", "write"})
                 .setResponseType(Oauth2ResponseType.code)
                 .setGrantType(Oauth2GrantType.authorization_code);
-        socialStrategy.authenticate(config, request, response);
+        JapResponse japResponse = oauth2Strategy.authenticate(config, request, response);
+        if (!japResponse.isSuccess()) {
+            return new ModelAndView(new RedirectView("/?error=" + URLUtil.encode(japResponse.getMessage())));
+        }
+        if (japResponse.isRedirectUrl()) {
+            return new ModelAndView(new RedirectView((String) japResponse.getData()));
+        } else {
+            System.out.println(japResponse.getData());
+            return new ModelAndView(new RedirectView("/"));
+        }
     }
 }
 ```
@@ -212,8 +225,10 @@ public class Oauth2Controller {
 #### **实现 controller**
 
 ```java
-import com.fujieid.jap.core.JapConfig;
+import cn.hutool.core.util.URLUtil;
 import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.core.result.JapResponse;
+import com.fujieid.jap.demo.config.JapConfigContext;
 import com.fujieid.jap.oauth2.OAuthConfig;
 import com.fujieid.jap.oauth2.Oauth2GrantType;
 import com.fujieid.jap.oauth2.Oauth2ResponseType;
@@ -221,6 +236,8 @@ import com.fujieid.jap.oauth2.Oauth2Strategy;
 import me.zhyd.oauth.utils.UuidUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.RedirectView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -244,7 +261,7 @@ public class Oauth2Controller {
 
     @RequestMapping("/login/implicit/jai")
     public void renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        Oauth2Strategy socialStrategy = new Oauth2Strategy(japUserService, new JapConfig());
+        Oauth2Strategy oauth2Strategy = new Oauth2Strategy(japUserService, new JapConfig());
         OAuthConfig config = new OAuthConfig();
         config.setPlatform("jai")
                 .setState(UuidUtils.getUUID())
@@ -257,7 +274,16 @@ public class Oauth2Controller {
                 .setScopes(new String[]{"read", "write"})
                 // 修改 ResponseType 为 Token 模式
                 .setResponseType(Oauth2ResponseType.token);
-        socialStrategy.authenticate(config, request, response);
+        JapResponse japResponse = oauth2Strategy.authenticate(config, request, response);
+        if (!japResponse.isSuccess()) {
+            return new ModelAndView(new RedirectView("/?error=" + URLUtil.encode(japResponse.getMessage())));
+        }
+        if (japResponse.isRedirectUrl()) {
+            return new ModelAndView(new RedirectView((String) japResponse.getData()));
+        } else {
+            System.out.println(japResponse.getData());
+            return new ModelAndView(new RedirectView("/"));
+        }
     }
 }
 ```
@@ -274,8 +300,10 @@ public class Oauth2Controller {
 #### **实现 controller**
 
 ```java
-import com.fujieid.jap.core.JapConfig;
+import cn.hutool.core.util.URLUtil;
 import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.core.result.JapResponse;
+import com.fujieid.jap.demo.config.JapConfigContext;
 import com.fujieid.jap.oauth2.OAuthConfig;
 import com.fujieid.jap.oauth2.Oauth2GrantType;
 import com.fujieid.jap.oauth2.Oauth2ResponseType;
@@ -283,6 +311,8 @@ import com.fujieid.jap.oauth2.Oauth2Strategy;
 import me.zhyd.oauth.utils.UuidUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.RedirectView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -306,7 +336,7 @@ public class Oauth2Controller {
 
     @RequestMapping("/login/password/jai")
     public void renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        Oauth2Strategy socialStrategy = new Oauth2Strategy(japUserService, new JapConfig());
+        Oauth2Strategy oauth2Strategy = new Oauth2Strategy(japUserService, new JapConfig());
         OAuthConfig config = new OAuthConfig();
         config.setPlatform("jai")
                 .setState(UuidUtils.getUUID())
@@ -323,7 +353,16 @@ public class Oauth2Controller {
                 // 指定账号密码
                 .setUsername("xxx")
                 .setPassword("xxx");
-        socialStrategy.authenticate(config, request, response);
+        JapResponse japResponse = oauth2Strategy.authenticate(config, request, response);
+        if (!japResponse.isSuccess()) {
+            return new ModelAndView(new RedirectView("/?error=" + URLUtil.encode(japResponse.getMessage())));
+        }
+        if (japResponse.isRedirectUrl()) {
+            return new ModelAndView(new RedirectView((String) japResponse.getData()));
+        } else {
+            System.out.println(japResponse.getData());
+            return new ModelAndView(new RedirectView("/"));
+        }
     }
 }
 ```
@@ -372,4 +411,5 @@ public class Oauth2Controller {
 
 ## 官方推荐
 
-官方推荐使用 [jap-demo](https://gitee.com/fujieid/jap-demo) 示例项目进行测试。
+- 普通示例项目：[jap-demo](https://gitee.com/fujieid/jap-demo)
+- 前后端分离项目示例：[jap-demo-vue](https://gitee.com/fujieid/jap-demo-vue)

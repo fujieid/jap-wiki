@@ -80,14 +80,17 @@ public class JapSimpleUserServiceImpl implements JapUserService {
 ```java
 package com.fujieid.jap.demo;
 
-import com.fujieid.jap.core.JapConfig;
 import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.core.context.JapAuthentication;
+import com.fujieid.jap.core.result.JapResponse;
+import com.fujieid.jap.demo.config.JapConfigContext;
 import com.fujieid.jap.simple.SimpleConfig;
 import com.fujieid.jap.simple.SimpleStrategy;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -110,14 +113,25 @@ public class SimpleController {
 
     @GetMapping("/login")
     public String toLogin(HttpServletRequest request) {
-        request.getSession().setAttribute("strategy", "simple");
+        if (JapAuthentication.checkUser(request, response).isSuccess()) {
+            return "redirect:/";
+        }
         return "login";
     }
 
     @PostMapping("/login")
     public void renderAuth(HttpServletRequest request, HttpServletResponse response) {
         SimpleStrategy simpleStrategy = new SimpleStrategy(japUserService, new JapConfig());
-        simpleStrategy.authenticate(new SimpleConfig(), request, response);
+        JapResponse japResponse = simpleStrategy.authenticate(new SimpleConfig(), request, response);
+        if (!japResponse.isSuccess()) {
+            return new ModelAndView(new RedirectView("/?error=" + URLUtil.encode(japResponse.getMessage())));
+        }
+        if (japResponse.isRedirectUrl()) {
+            return new ModelAndView(new RedirectView((String) japResponse.getData()));
+        } else {
+            System.out.println(japResponse.getData());
+            return new ModelAndView(new RedirectView("/"));
+        }
     }
 }
 ```
@@ -139,4 +153,5 @@ public class SimpleController {
 
 ## 官方推荐
 
-官方推荐使用 [jap-demo](https://gitee.com/fujieid/jap-demo) 示例项目进行测试。
+- 普通示例项目：[jap-demo](https://gitee.com/fujieid/jap-demo)
+- 前后端分离项目示例：[jap-demo-vue](https://gitee.com/fujieid/jap-demo-vue)

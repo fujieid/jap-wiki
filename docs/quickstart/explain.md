@@ -17,7 +17,7 @@ title: 名词解释
 - `第三方` 指开发者对接的第三方网站，比如：QQ平台、微信平台、微博平台
 - `用户` 指最终服务的真实用户
 
-## JustAuth中的关键词
+## JustAuth 中的关键词
 
 以下内容了解后，将会使你更容易地上手JustAuth。
 
@@ -37,6 +37,10 @@ title: 名词解释
     - Google：`uuid` 为用户的 `sub`，`sub`为Google的所有账户体系中用户唯一的身份标识符，详见：[OpenID Connect](https://developers.google.com/identity/protocols/oauth2/openid-connect)
 
 注：建议通过`uuid` + `source`的方式唯一确定一个用户，这样可以解决用户身份归属的问题。因为 单个用户ID 在某一平台中是唯一的，但不能保证在所有平台中都是唯一的。
+
+## JAP 中的关键字
+
+- `strategy` 策略，JAP 中每一类登录方式，都对应一种策略，熟悉 JustAuth 的开发者应该清楚，JustAuth 中的 Request 就相当于一类策略。
 
 ## 参考资料
 

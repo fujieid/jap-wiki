@@ -135,28 +135,6 @@ module.exports = {
         nav: [ // 导航栏配置
             {text: 'Getting Started', link: '/about'},
             {
-                text: '📖 新版文档',
-                items: [
-                    {text: '使用 jap-simple', link: '/quickstart/latest/jap-simple', target: '_blank'},
-                    {text: '使用 jap-social', link: '/quickstart/latest/jap-social', target: '_blank'},
-                    {text: '使用 jap-oauth2', link: '/quickstart/latest/jap-oauth2', target: '_blank'},
-                    {text: '使用 jap-oidc', link: '/quickstart/latest/jap-oidc', target: '_blank'},
-                    {text: '使用 jap-sso', link: '/quickstart/latest/jap-sso', target: '_blank'},
-                    {text: '使用 jap-mfa', link: '/quickstart/latest/jap-mfa', target: '_blank'},
-                ]
-            },
-            {
-                text: '📖 旧版文档',
-                items: [
-                    {text: '使用 jap-simple', link: '/quickstart/old/jap-simple', target: '_blank'},
-                    {text: '使用 jap-social', link: '/quickstart/old/jap-social', target: '_blank'},
-                    {text: '使用 jap-oauth2', link: '/quickstart/old/jap-oauth2', target: '_blank'},
-                    {text: '使用 jap-oidc', link: '/quickstart/old/jap-oidc', target: '_blank'},
-                    {text: '使用 jap-sso', link: '/quickstart/old/jap-sso', target: '_blank'},
-                    {text: '使用 jap-mfa', link: '/quickstart/old/jap-mfa', target: '_blank'},
-                ]
-            },
-            {
                 text: '💸 特别赞助商',
                 ariaLabel: '特别赞助商',
                 items: [
@@ -203,7 +181,27 @@ module.exports = {
                     sidebarDepth: 3, // 侧边栏显示2级
                     children: [
                         ['/quickstart/notice', '须知'],
-                        ['/quickstart/explain', '名词解释']
+                        ['/quickstart/explain', '名词解释'],
+                        ['/quickstart/jap-simple', '使用 jap-simple'],
+                        ['/quickstart/jap-social', '使用 jap-social'],
+                        ['/quickstart/jap-oauth2', '使用 jap-oauth2'],
+                        ['/quickstart/jap-oidc', '使用 jap-oidc'],
+                        ['/quickstart/jap-sso', '使用 jap-sso'],
+                        ['/quickstart/jap-mfa', '使用 jap-mfa'],
+                        ['/quickstart/front-end-and-backend', '前后端分离架构下使用 JAP'],
+                        {
+                            title: '    旧版文档',
+                            path: '/quickstart/old/',
+                            sidebarDepth: 4, // 侧边栏显示2级
+                            children: [
+                                ['/quickstart/old/jap-simple', '使用 jap-simple【旧版 v1.0.0】'],
+                                ['/quickstart/old/jap-social', '使用 jap-social【旧版 v1.0.0】'],
+                                ['/quickstart/old/jap-oauth2', '使用 jap-oauth2【旧版 v1.0.0】'],
+                                ['/quickstart/old/jap-oidc', '使用 jap-oidc【旧版 v1.0.0】'],
+                                ['/quickstart/old/jap-sso', '使用 jap-sso【旧版 v1.0.0】'],
+                                ['/quickstart/old/jap-mfa', '使用 jap-mfa【旧版 v1.0.0】']
+                            ]
+                        }
                     ]
                 },
                 // {

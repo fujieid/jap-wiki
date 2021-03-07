@@ -27,10 +27,11 @@ title: 如何使用 jap-oidc
 ```java
 package com.fujieid.jap.demo.service;
 
-import com.alibaba.fastjson.JSONObject;
 import com.fujieid.jap.core.JapUser;
 import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.oauth2.token.AccessToken;
 import com.google.common.collect.Lists;
+import com.xkcoding.json.JsonUtil;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -116,8 +117,9 @@ public class JapOauth2UserServiceImpl implements JapUserService {
 ## 实现 controller
 
 ```java
-import com.fujieid.jap.core.JapConfig;
 import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.core.result.JapResponse;
+import com.fujieid.jap.demo.config.JapConfigContext;
 import com.fujieid.jap.oauth2.Oauth2GrantType;
 import com.fujieid.jap.oauth2.Oauth2ResponseType;
 import com.fujieid.jap.oidc.OidcConfig;
@@ -125,6 +127,7 @@ import com.fujieid.jap.oidc.OidcStrategy;
 import me.zhyd.oauth.utils.UuidUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -148,7 +151,6 @@ public class OidcController {
 
     @RequestMapping("/login/jai")
     public void renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        request.getSession().setAttribute("strategy", "oidc");
         OidcStrategy oidcStrategy = new OidcStrategy(japUserService, new JapConfig());
         OidcConfig config = new OidcConfig();
         // 配置 OIDC 的 Issue 链接
@@ -161,7 +163,16 @@ public class OidcController {
                 .setScopes(new String[]{"read", "write"})
                 .setResponseType(Oauth2ResponseType.code)
                 .setGrantType(Oauth2GrantType.authorization_code);
-        oidcStrategy.authenticate(config, request, response);
+        JapResponse japResponse = oidcStrategy.authenticate(config, request, response);
+        if (!japResponse.isSuccess()) {
+            return new ModelAndView(new RedirectView("/?error=" + URLUtil.encode(japResponse.getMessage())));
+        }
+        if (japResponse.isRedirectUrl()) {
+            return new ModelAndView(new RedirectView((String) japResponse.getData()));
+        } else {
+            System.out.println(japResponse.getData());
+            return new ModelAndView(new RedirectView("/"));
+        }
     }
 }
 
@@ -202,4 +213,5 @@ public class OidcController {
 
 ## 官方推荐
 
-官方推荐使用 [jap-demo](https://gitee.com/fujieid/jap-demo) 示例项目进行测试。
+- 普通示例项目：[jap-demo](https://gitee.com/fujieid/jap-demo)
+- 前后端分离项目示例：[jap-demo-vue](https://gitee.com/fujieid/jap-demo-vue)

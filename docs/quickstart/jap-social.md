@@ -113,14 +113,16 @@ public class JapSocialUserServiceImpl implements JapUserService {
 ```java
 package com.fujieid.jap.demo;
 
-import com.fujieid.jap.core.JapConfig;
 import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.core.result.JapResponse;
+import com.fujieid.jap.demo.config.JapConfigContext;
 import com.fujieid.jap.social.SocialConfig;
 import com.fujieid.jap.social.SocialStrategy;
 import me.zhyd.oauth.config.AuthConfig;
 import me.zhyd.oauth.utils.UuidUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -154,7 +156,16 @@ public class SocialController {
         // 如果包含通过 justauth 自定义的第三方平台，则该值为实现 AuthSource 后的 getName() 值
         config.setPlatform("gitee");
         config.setState(UuidUtils.getUUID());
-        socialStrategy.authenticate(config, request, response);
+        JapResponse japResponse = socialStrategy.authenticate(config, request, response);
+        if (!japResponse.isSuccess()) {
+            return new ModelAndView(new RedirectView("/?error=" + URLUtil.encode(japResponse.getMessage())));
+        }
+        if (japResponse.isRedirectUrl()) {
+            return new ModelAndView(new RedirectView((String) japResponse.getData()));
+        } else {
+            System.out.println(japResponse.getData());
+            return new ModelAndView(new RedirectView("/"));
+        }
     }
 }
 ```
@@ -236,4 +247,5 @@ public class SocialController {
 
 ## 官方推荐
 
-官方推荐使用 [jap-demo](https://gitee.com/fujieid/jap-demo) 示例项目进行测试。
+- 普通示例项目：[jap-demo](https://gitee.com/fujieid/jap-demo)
+- 前后端分离项目示例：[jap-demo-vue](https://gitee.com/fujieid/jap-demo-vue)

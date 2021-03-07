@@ -202,4 +202,5 @@ public class OidcController {
 
 ## 官方推荐
 
-官方推荐使用 [jap-demo](https://gitee.com/fujieid/jap-demo) 示例项目进行测试。
+- 普通示例项目：[jap-demo](https://gitee.com/fujieid/jap-demo)
+- 前后端分离项目示例：[jap-demo-vue](https://gitee.com/fujieid/jap-demo-vue)

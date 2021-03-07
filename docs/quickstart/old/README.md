@@ -9,7 +9,7 @@ title: 快速开始
 
 最新版文档请参考
 
-<ref-link :link='`/quickstart/latest`' :title="`最新版帮助文档（适配 v1.0.1+ 版）`"/>
+<ref-link :link='`/quickstart/`' :title="`最新版帮助文档（适配 v1.0.1+ 版）`"/>
 :::
 
 本章节介绍 JAP 的具体使用方法。

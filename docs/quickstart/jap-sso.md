@@ -90,9 +90,13 @@ SimpleStrategy simpleStrategy = new SimpleStrategy(japUserService, new JapConfig
 ::: warning 请注意 
 - Strategy 初始化优先级要尽量高，以此项目[jap-demo](https://gitee.com/fujieid/jap-demo)为例：
 ```java
-package com.fujieid.jap.demo;
+package com.fujieid.jap.demo.controller;
 
 import com.fujieid.jap.core.JapUserService;
+import com.fujieid.jap.core.context.JapAuthentication;
+import com.fujieid.jap.core.result.JapResponse;
+import com.fujieid.jap.demo.config.JapConfigContext;
+import com.fujieid.jap.demo.util.ViewUtil;
 import com.fujieid.jap.simple.SimpleConfig;
 import com.fujieid.jap.simple.SimpleStrategy;
 import org.springframework.beans.factory.InitializingBean;
@@ -100,6 +104,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -122,14 +127,19 @@ public class SimpleController implements InitializingBean {
     private SimpleStrategy simpleStrategy;
 
     @GetMapping("/login")
-    public String toLogin(HttpServletRequest request) {
-        request.getSession().setAttribute("strategy", "simple");
+    public String toLogin(HttpServletRequest request, HttpServletResponse response) {
+        JapConfigContext.strategy = "simple";
+        if (JapAuthentication.checkUser(request, response).isSuccess()) {
+            return "redirect:/";
+        }
         return "login";
     }
 
     @PostMapping("/login")
-    public void renderAuth(HttpServletRequest request, HttpServletResponse response) {
-        simpleStrategy.authenticate(new SimpleConfig(), request, response);
+    public ModelAndView renderAuth(HttpServletRequest request, HttpServletResponse response) {
+        JapResponse japResponse = simpleStrategy.authenticate(new SimpleConfig()
+                .setRememberMeCookieDomain("jap.com"), request, response);
+        return ViewUtil.getView(japResponse);
     }
 
     /**
@@ -140,7 +150,6 @@ public class SimpleController implements InitializingBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         simpleStrategy = new SimpleStrategy(japUserService, JapConfigContext.getConfig());
-
     }
 }
 ```
@@ -275,4 +284,5 @@ spring.redis.lettuce.pool.max-idle=8
 
 ## 官方推荐
 
-官方推荐使用 [jap-demo](https://gitee.com/fujieid/jap-demo) 示例项目进行测试。
+- 普通示例项目：[jap-demo](https://gitee.com/fujieid/jap-demo)
+- 前后端分离项目示例：[jap-demo-vue](https://gitee.com/fujieid/jap-demo-vue)
