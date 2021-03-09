@@ -43,32 +43,37 @@
 <p align="center">
 	<strong>官方网站（Wiki）：</strong> <a target="_blank" href='https://justauth.plus'>https://justauth.plus</a>
 </p>
+<p align="center">
+	<a target="_blank" href='/paper/JAP-paper-V1.0.0.pdf'>JustAuthPlus（JAP）产品白皮书 V1.0.0</a>
+</p>
 
 ## JAP 是什么？
 
-JAP 是**一款开源的登录中间件**，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中，就像集成 JA 一样，简单方便。
-
-JAP 要做的是为所有需要身份认证的应用提供一套标准的解决方案，集成所有 APP。方便开发者无缝对接任何第三方应用或者自有系统。
+JAP 是**一款开源的登录中间件**，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中，就像集成 [JustAuth](https://gitee.com/yadong.zhang/JustAuth) 一样，简单方便。
 
 - JAP 口号：Just auth into any app!
 - JAP 目标：让身份链接无处可藏
-- JAP 价值：方便开发者无缝对接任何第三方应用或者自有系统，提高开发效率，减少代码维护成本
+- JAP 价值：方便开发者无缝对接绝大多数第三方应用或者自有系统，提高开发效率，减少代码维护成本
 - JAP 愿景：以开源的方式，受惠于开源社区，赋能于开发者。使之成为开发者生态内必不可少的“基础设施”，以期形成新的技术标准。
 
-**ps：我们要让开发者可以基于 JAP 开发出自己的 IAM 或者 IDaaS 系统。**
+**ps：我们要让开发者可以基于 JAP 开发出自己的 IAM 或者 IDaaS 系统。Build your own IDaaS/IAM.**
 
 ## JAP 有什么特点？
 
 - 单点登录：一处登录，出处通行
-- 开箱即用：API 设计趋近于白话，类似并参考 JustAuth
+- 开箱即用：API 设计趋近于白话，类似并参考 [JustAuth](https://gitee.com/yadong.zhang/JustAuth)
 - 多平台：
-  - 国内外数十家第三方平台（基于 JustAuth）
+  - 国内外数十家第三方平台（基于 [JustAuth](https://gitee.com/yadong.zhang/JustAuth)）
   - OAuth（OIDC） 协议的平台，内置国内外常见平台
   - SAML 协议的平台，内置国内外常见平台
 - 业务解耦：JAP 不深入具体的业务，只将授权认证方面的功能抽象出一套标准的组件，方便任意系统快速对接
 - 模块化：JAP 基于模块开发，基本做到，用哪种引哪种
 - 统一标准：一切内置实现或者自定义的实现，都基于标准的策略
 - 多语言支持：Java、Python、Go、Node等
+
+## JAP 有什么功能？
+
+集成账号密码登录、单点登录、OAuth 登录、OIDC 登录、社会化登录、多因素认证、SAML 登录、LDAP 登录，提供 OAuth 服务和OIDC服务
 
 ## 适用于哪些场景？
 

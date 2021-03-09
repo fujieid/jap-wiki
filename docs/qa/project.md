@@ -9,7 +9,7 @@ title: 项目相关问题
 ----
 
 
-## 什么要做 JAP ？
+## 为什么要做 JAP ？
 
 参考文章：[我和 JAP（JA Plus） 的故事](https://my.oschina.net/yadong0415/blog/4914954)，通过该篇文章，或许你可以详细了解到 JAP 的前世今生和来世。
 

@@ -45,7 +45,7 @@ footerWrap:
     details: API Docs，适合开发人员查看
   - title: 需求收集
     link: https://github.com/fujieid/jap/issues
-    details: JustAuth 开发计划，收集用户需求
+    details: JAP 开发计划，收集用户需求
 - headline: 开源推荐
   items:
   - title: JustAuth

@@ -47,7 +47,7 @@ module.exports = {
         ['homebadge', {
             selector: '.hero',
             repoLink: 'https://github.com/fujieid/jap/releases',
-            badgeLink: 'https://img.shields.io/badge/version-1.0.1%20alpha-green',
+            badgeLink: 'https://img.shields.io/badge/version-1.0.1%20alpha.1-green',
             badgeGroup: [
                 'https://img.shields.io/badge/license-LGPL%203.0-red',
                 'https://img.shields.io/badge/JDK-1.8+-green.svg',
@@ -106,6 +106,16 @@ module.exports = {
             speed: 3000,
             items:[
                 {
+                    text: '华为云开年采购季，领8800元开年红包！',
+                    image:'/ads/my/huaweicloud.png',
+                    link: 'https://activity.huaweicloud.com/newyear_promotion/index.html?bpName=0911d88ebe000f390f6ac0166fcc8700&bindType=1'
+                },
+                {
+                    text: '华为云开年采购季，领8800元开年红包！',
+                    image:'/ads/my/huaweicloud.png',
+                    link: 'https://account.huaweicloud.com/obmgr/invitation/invitation.html?bpName=0000000100000002D50B4AD60BAEC466FB3EE598C9BF3BE26123AFF1F880C7B2387ECB39400FE52871BC25654926E1092F52A730157C0109DA40E8025330AA570A2C157F711BF037&inviteCode=00000001000000023EF50610D22B360BD81506298375A270E995498A73EAEB461DB99566593AD403&bindType=1&isDefault=1'
+                },
+                {
                     text: '好工具一定要分享给最好的朋友，ProcessOn助您和好友一起高效办公！',
                     image:'/ads/my/processon.png',
                     link: 'https://www.processon.com/i/5b7e28ffe4b08faf8c3116db'
@@ -134,6 +144,7 @@ module.exports = {
         },
         nav: [ // 导航栏配置
             {text: 'Getting Started', link: '/about'},
+            {text: '📖 白皮书', link: 'https://justauth.plus/paper/JAP-paper-V1.0.0.pdf', target: '_blank'},
             {
                 text: '💸 特别赞助商',
                 ariaLabel: '特别赞助商',
@@ -188,7 +199,6 @@ module.exports = {
                         ['/quickstart/jap-oidc', '使用 jap-oidc'],
                         ['/quickstart/jap-sso', '使用 jap-sso'],
                         ['/quickstart/jap-mfa', '使用 jap-mfa'],
-                        ['/quickstart/front-end-and-backend', '前后端分离架构下使用 JAP'],
                         {
                             title: '    旧版文档',
                             path: '/quickstart/old/',
@@ -219,6 +229,15 @@ module.exports = {
                 //         ['/quickstart/error_code', '异常代码']
                 //     ]
                 // },
+                {
+                    title: '集成案例',
+                    path: '/demo/',
+                    sidebarDepth: 3, // 侧边栏显示2级
+                    children: [
+                        ['/demo/front-end-and-backend', '前后端分离架构下使用 JAP'],
+                        ['/demo/springboot', 'SpringBoot 中使用 JAP'],
+                    ]
+                },
                 ['contributors', '贡献者'],
                 ['thx', '致谢'],
                 ['update', '更新记录'],
