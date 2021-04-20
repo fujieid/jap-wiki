@@ -17,7 +17,11 @@ export default {
     },
     icon: {
       type: String,
-      default: 'fire'
+      default: 'smile'
+    },
+    iconColor: {
+      type: String,
+      default: '#108ee9'
     },
   },
   mounted() {
@@ -36,7 +40,7 @@ export default {
                   type: that.icon
                 },
                 style: {
-                  color: '#108ee9'
+                  color: that.iconColor
                 }
               }
           );

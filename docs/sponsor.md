@@ -37,7 +37,7 @@ editLink: false
 - 等等...
 :::
 
-如果你想对我们进行周期性赞助，请发送邮件到：zhyd@fujieid.com
+如果你想对我们进行周期性赞助，请发送邮件到：support@fujieid.com
 
 ::: tip 邮件内容
 - Logo：请自行处理到合适

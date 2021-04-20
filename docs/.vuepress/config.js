@@ -199,36 +199,23 @@ module.exports = {
                         ['/quickstart/jap-oidc', '使用 jap-oidc'],
                         ['/quickstart/jap-sso', '使用 jap-sso'],
                         ['/quickstart/jap-mfa', '使用 jap-mfa'],
-                        {
-                            title: '    旧版文档',
-                            path: '/quickstart/old/',
-                            sidebarDepth: 4, // 侧边栏显示2级
-                            children: [
-                                ['/quickstart/old/jap-simple', '使用 jap-simple【旧版 v1.0.0】'],
-                                ['/quickstart/old/jap-social', '使用 jap-social【旧版 v1.0.0】'],
-                                ['/quickstart/old/jap-oauth2', '使用 jap-oauth2【旧版 v1.0.0】'],
-                                ['/quickstart/old/jap-oidc', '使用 jap-oidc【旧版 v1.0.0】'],
-                                ['/quickstart/old/jap-sso', '使用 jap-sso【旧版 v1.0.0】'],
-                                ['/quickstart/old/jap-mfa', '使用 jap-mfa【旧版 v1.0.0】']
-                            ]
-                        }
+                        ['/quickstart/error_code', '错误代码'],
                     ]
                 },
-                // {
-                //     title: '进阶使用',
-                //     path: '/quickstart/',
-                //     sidebarDepth: 3, // 侧边栏显示2级
-                //     children: [
-                //         ['/quickstart/notice', '须知'],
-                //         ['/quickstart/explain', '名词解释'],
-                //         ['/quickstart/jap-simple', '使用 jap-simple'],
-                //         ['/quickstart/jap-social', '使用 jap-social'],
-                //         ['/quickstart/jap-oauth2', '使用 jap-oauth2'],
-                //         ['/quickstart/jap-oidc', '使用 jap-oidc'],
-                //         ['/quickstart/jap-sso', '使用 jap-sso'],
-                //         ['/quickstart/error_code', '异常代码']
-                //     ]
-                // },
+                {
+                    title: 'IDS OAuth 2.0 服务端',
+                    path: '/ids/',
+                    sidebarDepth: 3, // 侧边栏显示2级
+                    children: [
+                        ['/ids/quickstart', '快速开始'],
+                        ['/ids/scope', '自定义 scope'],
+                        ['/ids/cache', '自定义缓存'],
+                        ['/ids/jwks', '自定义 Token 加密密钥'],
+                        ['/ids/pkce', '使用 PKCE 模式'],
+                        ['/ids/error_code', '错误代码'],
+                        // ['/ids/multi-jwks', '一客户端一密'],
+                    ]
+                },
                 {
                     title: '集成案例',
                     path: '/demo/',
@@ -240,6 +227,7 @@ module.exports = {
                 },
                 ['contributors', '贡献者'],
                 ['thx', '致谢'],
+                ['donate', '捐赠列表'],
                 ['update', '更新记录'],
             ]
         }, // 侧边栏配置

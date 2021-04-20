@@ -65,5 +65,7 @@ footerWrap:
     details: 完整的线上解决方案（企业开发必备）
 ---
 
-<Notify :title="'欢迎光临'" :link="'https://github.com/fujieid/jap'" :desc="'JustAuth 升级版 JAP 强悍来袭！JAP 是一款开源的登录认证中间件，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中，就像集成 JA 一样，简单方便。'"/>
+<Notify :title="'不可不看的白皮书！'" :icon="'fire'" :iconColor="'red'" :link="'https://justauth.plus/paper/JAP-paper-V1.0.0.pdf'" :desc="'JustAuthPlus（JAP）技术白皮书正式发布，带您更加细致、深入的了解 JAP 的技术方案以及 JAP 的现在和未来。请查阅！'"/>
+
+<Notify :title="'友情提示'" :link="'https://tp.wjx.top/vj/Qj3Abce.aspx'" :desc="'邀请你参与关于 JAP 的问卷调查，感谢你的支持！'"/>
 

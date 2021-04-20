@@ -9,15 +9,28 @@ editLink: false
 
 ----
 
-## v1.0.1-alpha.2（2021-03-**）
+## v1.0.1（2021-04-20）
 
-- [jap-oidc] 优化`OidcStrategy#authenticate`方法，缓存 `OidcDiscoveryDto`，减少不必要的 http 请求
-- [jap-oidc] 优化 `OidcUtil` 代码，修复已知的 BUG
+### 新增
+
+- 完成`jap-ids`模块
+- 添加 `com.fujieid.jap.core.util.RequestUtil`
+
+### 修改
+
+- [jap-oidc] 优化 `OidcStrategy#authenticate` 方法，缓存 `OidcDiscoveryDto`，减少不必要的 http 请求
+- [jap-oidc] 优化 `OidcUtil` 工具类的代码，解决一些已知问题
+- [jap-social] 解决一些已知问题
+- 重构 `com.fujieid.jap.core.cache.JapLocalCache`，实现定时器，定期清理本地缓存
+
+### PR
+
+- 合并 Gitee PR [#9](https://gitee.com/fujieid/jap/pulls/9) by [@dreamlu](https://gitee.com/dreamlu)
 
 
 ## v1.0.1-alpha.1（2021-03-07）
 
-### Modified
+### 修改
 
 - 解决 `JapErrorCode` 描述错误的问题
 - 改进 `JapTokenHelper` 代码

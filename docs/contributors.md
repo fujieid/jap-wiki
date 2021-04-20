@@ -1,7 +1,12 @@
 ---
 title: 项目贡献者名单
 ---
-## 项目贡献者名单
+
+## 项目贡献者列表
+
+[![contributors](https://whnb.wang/contributors/fujieid/jap/15)](https://whnb.wang)
+
+## 项目贡献者详情（已收集到的）
 
 <template>
 <a-row :gutter="16">
@@ -40,7 +45,7 @@ title: 项目贡献者名单
             <a slot="title" href="https://gitee.com/xkcoding" target="_blank"><a-icon type="gitlab" /></a>
             <a slot="title" href="https://www.zhihu.com/column/xkcoding" target="_blank"><a-icon type="zhihu" /></a>
         </template>
-        <a-card-meta title="Yadong Zhang" description="Nothing is impossible.">
+        <a-card-meta title="Yadong Zhang" description="不积跬步无以至千里，不积小流无以成江海。">
           <a-avatar
             slot="avatar"
             src="https://portrait.gitee.com/uploads/avatars/user/171/513217_xkcoding_1578926197.png!avatar200"
@@ -60,7 +65,7 @@ title: 项目贡献者名单
             <a slot="title" href="https://github.com/ZeroOrInfinity" target="_blank"><a-icon type="github" /></a>
             <a slot="title" href="https://gitee.com/pcore" target="_blank"><a-icon type="gitlab" /></a>
         </template>
-        <a-card-meta title="YongWu zheng" description="Nothing is impossible.">
+        <a-card-meta title="YongWu zheng" description="一切归零, 重新开始!">
           <a-avatar
             slot="avatar"
             src="https://portrait.gitee.com/uploads/avatars/user/385/1157580_pcore_1600243694.png!avatar200"
@@ -79,10 +84,31 @@ title: 项目贡献者名单
             <a slot="title" href="https://loveyatou.top/" target="_blank"><a-icon type="home" /></a>
             <a slot="title" href="https://gitee.com/harryleexyz" target="_blank"><a-icon type="gitlab" /></a>
         </template>
-        <a-card-meta title="Zheng Yang" description="Nothing is impossible.">
+        <a-card-meta title="Zheng Yang" description="我知道余生必定再戒不掉你。">
           <a-avatar
             slot="avatar"
             src="https://portrait.gitee.com/uploads/avatars/user/1660/4981222_harryleexyz_1578977984.png!avatar200"
+          />
+        </a-card-meta>
+      </a-card>
+    </a-col>
+    <a-col :span="5">
+      <a-card hoverable size="small" style="width: 250px">
+        <img
+          slot="cover"
+          alt="example"
+          src="/contributors/dreamlu.png"
+        />
+        <template slot="actions" class="ant-card-actions">
+            <a slot="title" href="https://www.dreamlu.net" target="_blank"><a-icon type="home" /></a>
+            <a slot="title" href="https://gitee.com/dreamlu" target="_blank"><a-icon type="gitlab" /></a>
+            <a slot="title" href="https://github.com/ChunMengLu" target="_blank"><a-icon type="github" /></a>
+            <a slot="title" href="https://zhuanlan.zhihu.com/c_1233105029428453376" target="_blank"><a-icon type="zhihu" /></a>
+        </template>
+        <a-card-meta title="DreamLu" description="生命不止，折腾不休。">
+          <a-avatar
+            slot="avatar"
+            src="https://portrait.gitee.com/uploads/avatars/user/0/372_dreamlu_1578913784.jpg!avatar200"
           />
         </a-card-meta>
       </a-card>
