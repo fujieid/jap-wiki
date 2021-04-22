@@ -213,6 +213,11 @@ public class Oauth2Controller {
     }
 }
 ```
+
+::: warning 注意
+部分平台的 `getUserInfo`和`getAccessToken`接口的请求方式为 `GET` 请求，针对这种情况，处理方法参考：[第三方平台获取 token 和 userinfo 的请求方式为 GET](/qa/func.html#第三方平台获取-token-和-userinfo-的请求方式为-get)
+:::
+
 ### 隐式授权模式
 
 

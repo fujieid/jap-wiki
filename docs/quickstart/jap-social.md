@@ -116,6 +116,7 @@ package com.fujieid.jap.demo;
 import com.fujieid.jap.core.JapUserService;
 import com.fujieid.jap.core.result.JapResponse;
 import com.fujieid.jap.demo.config.JapConfigContext;
+import com.fujieid.jap.demo.util.ViewUtil;
 import com.fujieid.jap.social.SocialConfig;
 import com.fujieid.jap.social.SocialStrategy;
 import me.zhyd.oauth.config.AuthConfig;
@@ -145,17 +146,17 @@ public class SocialController {
 
     @RequestMapping("/login/gitee")
     public void renderAuth(HttpServletRequest request, HttpServletResponse response) {
-        SocialStrategy socialStrategy = new SocialStrategy(japUserService, new JapConfig()
-                .setOptions(AuthConfig.builder()
-                        .clientId("3d4df5b080492af847d4eb3aa2abdcaf11ae29b312beb46520fb7972553a9158")
-                        .clientSecret("xxxxxxx")
-                        .redirectUri("http://127.0.0.1:8443/social/login/gitee")
-                        .build()));
+        SocialStrategy socialStrategy = new SocialStrategy(japUserService, new JapConfig());
         SocialConfig config = new SocialConfig();
         // platform 参考 justauth#AuthDefaultSource
         // 如果包含通过 justauth 自定义的第三方平台，则该值为实现 AuthSource 后的 getName() 值
         config.setPlatform("gitee");
         config.setState(UuidUtils.getUUID());
+        config.setJustAuthConfig(AuthConfig.builder()
+                .clientId("fda07d40917d6f040822d3fa01c8c75588c67d63132c3ddc5c66990342115ba9")
+                .clientSecret("016f88fbff2d178263c4060c46168f4937153120a310adc21980e7838b76e833")
+                .redirectUri("http://sso.jap.com:8443/social/login/gitee")
+                .build());
         JapResponse japResponse = socialStrategy.authenticate(config, request, response);
         if (!japResponse.isSuccess()) {
             return new ModelAndView(new RedirectView("/?error=" + URLUtil.encode(japResponse.getMessage())));
@@ -207,11 +208,17 @@ public class SocialController {
 
     @RequestMapping("/login/gitee")
     public void renderAuth(HttpServletRequest request, HttpServletResponse response) {
-        SocialStrategy socialStrategy = new SocialStrategy(japUserService, new JapConfig()
-                .setOptions(new AuthConfig()));
+        SocialStrategy socialStrategy = new SocialStrategy(japUserService, new JapConfig());
         SocialConfig config = new SocialConfig();
+        // platform 参考 justauth#AuthDefaultSource
+        // 如果包含通过 justauth 自定义的第三方平台，则该值为实现 AuthSource 后的 getName() 值
         config.setPlatform("gitee");
         config.setState(UuidUtils.getUUID());
+        config.setJustAuthConfig(AuthConfig.builder()
+                .clientId("fda07d40917d6f040822d3fa01c8c75588c67d63132c3ddc5c66990342115ba9")
+                .clientSecret("016f88fbff2d178263c4060c46168f4937153120a310adc21980e7838b76e833")
+                .redirectUri("http://sso.jap.com:8443/social/login/gitee")
+                .build());
         socialStrategy.authenticate(config, request, response);
     }
 }
