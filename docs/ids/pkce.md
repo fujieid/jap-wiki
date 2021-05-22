@@ -21,6 +21,7 @@ PKCE 模式和普通授权码模式在请求时，只有参数上的区别。
 **在 PKCE 模式下**
 - 在请求授权端点时，需要传递 `code_challenge` 和 `code_challenge_method` 两个参数。
 - 在请求 token 端点时，需要传递 `code_verifier`。
+- PKCE 模式下，全程不需要传递也不需要保存 `client_secret`。
 
 | 参数  | 含义 | 作用 |
 | :------------: | :------------: | :------------: |
@@ -42,11 +43,17 @@ String codeChallengeMethod = clientDetail.getCodeChallengeMethod();
 String codeChallenge = OauthUtil.generateCodeChallenge(codeChallengeMethod, codeVerifier);
 
 // 生成授权地址
-https://{host}/oauth/authorize?client_id=%s&response_type=code&scope=%s&redirect_uri=%s&state=%s&code_challenge=%s&code_challenge_method=%s
+https://{host}/oauth/authorize?client_id=xx&response_type=code&scope=read&redirect_uri=xx&state=xx&code_challenge=xx&code_challenge_method=xx
 ```
 
 ::: tip 注意
-在请求授权端点时，应对 `code_verifier` 进行缓存。
+在请求授权端点时，应对 `code_verifier` 进行缓存，当授权服务器回调回来时，需要获取到 `code_verifier` 然后请求令牌端点。
+
+比如在上面这段代码中，生成 `codeVerifier` 后，需要加上：
+```java
+// 将 codeVerifier 放入缓存
+cache.set("codeVerifier", codeVerifier);
+```
 :::
 
 用户登录并确认授权后，回调到开发者的系统，开发者的系统中通过 code 换取 token：
@@ -56,5 +63,18 @@ https://{host}/oauth/authorize?client_id=%s&response_type=code&scope=%s&redirect
 String codeVerifier = cache.get("codeVerifier");
 
 // 生成获取 token 的地址
-https://{host}/oauth/token?grant_type=authorization_code&client_id=%s&redirect_uri=%s&code=%s&code_verifier=%s
+https://{host}/oauth/token?grant_type=authorization_code&client_id=xx&redirect_uri=xx&code=xx&code_verifier=xx
 ```
+
+
+
+## 更多功能
+
+<ref-link :link='`/ids/quickstart`' :title="`快速开始`"/>
+<ref-link :link='`/ids/custom-login-page`' :title="`自定义登录页面`"/>
+<ref-link :link='`/ids/custom-confirm-page`' :title="`自定义确认授权页面`"/>
+<ref-link :link='`/ids/scope`' :title="`自定义 scope`"/>
+<ref-link :link='`/ids/cache`' :title="`自定义缓存`"/>
+<ref-link :link='`/ids/jwks`' :title="`自定义 Token 加密密钥`"/>
+<ref-link :link='`/ids/auto-approve`' :title="`自动授权`"/>
+<ref-link :link='`/ids/error_code`' :title="`错误代码`"/>

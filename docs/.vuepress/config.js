@@ -47,12 +47,10 @@ module.exports = {
         ['homebadge', {
             selector: '.hero',
             repoLink: 'https://github.com/fujieid/jap/releases',
-            badgeLink: 'https://img.shields.io/badge/version-1.0.1%20alpha.1-green',
+            badgeLink: 'https://img.shields.io/github/v/release/fujieid/jap?style=flat-square',
             badgeGroup: [
                 'https://img.shields.io/badge/license-LGPL%203.0-red',
-                'https://img.shields.io/badge/JDK-1.8+-green.svg',
-                'https://img.shields.io/badge/Api%20Docs-latest-orange',
-                'https://img.shields.io/badge/Docs-latest-blueviolet.svg',
+                'https://app.codacy.com/project/badge/Grade/c4c76cde65594819ab3de3e25e9b99d4',
                 'https://codecov.io/gh/fujieid/jap/branch/master/graph/badge.svg?token=WmfmgwxtnJ',
                 'https://travis-ci.com/fujieid/jap.svg?branch=master&status=passed',
                 'https://gitee.com/fujieid/jap/badge/star.svg?theme=white',
@@ -143,7 +141,6 @@ module.exports = {
             ]
         },
         nav: [ // 导航栏配置
-            {text: 'Getting Started', link: '/about'},
             {text: '📖 白皮书', link: 'https://justauth.plus/paper/JAP-paper-V1.0.0.pdf', target: '_blank'},
             {
                 text: '💸 特别赞助商',
@@ -191,7 +188,6 @@ module.exports = {
                     path: '/quickstart/',
                     sidebarDepth: 3, // 侧边栏显示2级
                     children: [
-                        ['/quickstart/notice', '须知'],
                         ['/quickstart/explain', '名词解释'],
                         ['/quickstart/jap-simple', '使用 jap-simple'],
                         ['/quickstart/jap-social', '使用 jap-social'],
@@ -209,9 +205,12 @@ module.exports = {
                     children: [
                         ['/ids/quickstart', '快速开始'],
                         ['/ids/scope', '自定义 scope'],
+                        ['/ids/custom-login-page', '自定义登录页面'],
+                        ['/ids/custom-confirm-page', '自定义确认授权页面'],
                         ['/ids/cache', '自定义缓存'],
                         ['/ids/jwks', '自定义 Token 加密密钥'],
                         ['/ids/pkce', '使用 PKCE 模式'],
+                        ['/ids/auto-approve', '自动授权'],
                         ['/ids/error_code', '错误代码'],
                         // ['/ids/multi-jwks', '一客户端一密'],
                     ]

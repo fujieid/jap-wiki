@@ -26,6 +26,18 @@ title: 贡献者协议
 - 编写文档
 - 文章投稿：[JAP 相关文章投稿](https://www.wjx.cn/vj/r4gHhdm.aspx)
 
+::: warning 须知
+如果你贡献代码，请确定你所贡献的代码不存在协议冲突/不兼容的情况
+
+你可以从以下两个方面检查你的代码：
+- 是否新增了第三方依赖库？如果新增了第三方依赖库，其 LICENSE 是否兼容 LGPL-3.0？ （LICENSE 兼容，请参考：[开源许可证兼容性指南 - 使用库的兼容性列表](https://shimo.im/docs/uL4VQaYGL2sadQOV#anchor-74ae)）
+- 是否参考/借鉴/复制了其他开源项目的代码？被引用的代码所属项目的 LICENSE 是否兼容 LGPL-3.0？（LICENSE 兼容，请参考：[开源许可证兼容性指南 - 合并/修改代码的许可证兼容性列表](https://shimo.im/docs/uL4VQaYGL2sadQOV#anchor-39f8)）
+
+如果你的代码或者代码中新引入的依赖项与 LGPL-3.0 不兼容，非常抱歉，我们可能不会合并你的代码。
+
+最后，感谢你的关注、支持。
+:::
+
 不知道如何贡献？你可以先参考 JAP 的 Issue 列表：
 
 - [gitee issues](https://gitee.com/fujieid/jap/issues)

@@ -44,7 +44,7 @@ footerWrap:
     link: https://apidoc.gitee.com/fujieid/jap
     details: API Docs，convenient for developers to view.
   - title: Demand collection
-    link: https://github.com/fujieid/jap/issues
+    link: https://gitee.com/fujieid/jap/issues
     details: JustAuth Plan，collecting user demands.
 - headline: Open Source Recommendation
   items:

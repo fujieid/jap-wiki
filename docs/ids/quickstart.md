@@ -14,7 +14,7 @@ title: 快速开始
 <dependency>
     <groupId>com.fujieid</groupId>
     <artifactId>jap-ids</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 
@@ -122,9 +122,6 @@ import com.fujieid.jap.ids.model.UserInfo;
 import com.fujieid.jap.ids.service.IdsUserService;
 import org.springframework.stereotype.Service;
 
-import java.util.LinkedList;
-import java.util.List;
-
 /**
  * @author yadong.zhang (yadong.zhang0415(a)gmail.com)
  * @version 1.0.0
@@ -142,7 +139,7 @@ public class IdsUserServiceImpl implements IdsUserService {
      * @return UserInfo
      */
     @Override
-    public UserInfo loginByUsernameAndPassword(String username, String password) {
+    public UserInfo loginByUsernameAndPassword(String username, String password, String clientId) {
         return null;
     }
 
@@ -164,10 +161,11 @@ public class IdsUserServiceImpl implements IdsUserService {
      * @return UserInfo
      */
     @Override
-    public UserInfo getByName(String username) {
+    public UserInfo getByName(String username, String clientId) {
         return null;
     }
 }
+
 ```
 
 ## 第三步：注册 ids 上下文
@@ -232,37 +230,50 @@ JapIds.registerContext(new IdsContext()
 
 OAuth 服务需要以下几个接口：
 <ul>
-    <li>服务发现：http://{host}:{port}/.well-known/openid-configuration</li>
-    <li>解密公钥：http://{host}:{port}/.well-known/jwks.json</li>
-    <li>获取授权：http://{host}:{port}/oauth/authorize</li>
-    <li>确认授权：http://{host}:{port}/oauth/confirm</li>
-    <li>获取/刷新Token：http://{host}:{port}/oauth/token</li>
-    <li>收回Token：http://{host}:{port}/oauth/revoke_token</li>
-    <li>用户详情：http://{host}:{port}/oauth/userinfo</li>
-    <li>check session：http://{host}:{port}/oauth/check_session</li>
-    <li>授权异常：http://{host}:{port}/oauth/error</li>
-    <li>登录：http://{host}:{port}/oauth/login</li>
-    <li>退出登录：http://{host}:{port}/oauth/logout</li>
+    <li><a-tag color="blue">GET</a-tag>服务发现：http://{host}:{port}/.well-known/openid-configuration</li>
+    <li><a-tag color="blue">GET</a-tag>解密公钥：http://{host}:{port}/.well-known/jwks.json</li>
+    <li><a-tag color="blue">GET</a-tag>获取授权：http://{host}:{port}/oauth/authorize <a-tag color="blue">跳转页面（登录页面或者回调页面）</a-tag></li>
+    <li><a-tag color="blue">POST</a-tag>同意授权：http://{host}:{port}/oauth/authorize <a-tag color="blue">同意授权（在确认授权之后）</a-tag></li>
+    <li><a-tag color="blue">GET</a-tag>自动授权：http://{host}:{port}/oauth/authorize/auto <a-tag color="blue">自动授权（不会显示确认授权页面）</a-tag></li>
+    <li><a-tag color="blue">GET</a-tag>确认授权：http://{host}:{port}/oauth/confirm <a-tag color="blue">登录完成后的确认授权页面</a-tag></li>
+    <li><a-tag color="blue">GET/POST</a-tag>获取/刷新Token：http://{host}:{port}/oauth/token</li>
+    <li><a-tag color="blue">GET/POST</a-tag>收回Token：http://{host}:{port}/oauth/revoke_token</li>
+    <li><a-tag color="blue">GET/POST</a-tag>用户详情：http://{host}:{port}/oauth/userinfo</li>
+    <li><a-tag color="blue">GET</a-tag>check session：http://{host}:{port}/oauth/check_session</li>
+    <li><a-tag color="blue">GET</a-tag>授权异常：http://{host}:{port}/oauth/error</li>
+    <li><a-tag color="blue">GET</a-tag>登录：http://{host}:{port}/oauth/login <a-tag color="blue">跳转到登录页面</a-tag></li>
+    <li><a-tag color="blue">POST</a-tag>登录：http://{host}:{port}/oauth/login <a-tag color="blue">执行登录表单</a-tag></li>
+    <li><a-tag color="blue">GET</a-tag>退出登录：http://{host}:{port}/oauth/logout</li>
 </ul>
 
 注意，如果你在开发 http 接口时， 没有按照以上示例的路径格式命名，那么，在你开发完成后，需要在`第三步：注册 ids 上下文`时，重新配置`IdsConfig`节点下相关属性，如下：
 
 | 属性名  | 对应 http 接口 | 默认值 | 备注 |
 | :------------: | :------------: | :------------: | :------------: |
-| `loginUrl` | 登录 | `/oauth/login` |
+| `loginUrl` | 登录页面/登录的 API 接口 | `/oauth/login` | 当未配置 `loginPageUrl` 时，`loginUrl` 即表示登录页面<br> 又表示登录的 API 接口，所以开发接口时需要保持一致。<br> **API 接口使用 POST 方式，登录页面使用 GET 方式** |
 | `errorUrl` | 授权异常 | `/oauth/error` | |
-| `confirmUrl` | 确认授权 | `/oauth/confirm` | |
 | `authorizeUrl` | 获取授权 | `/oauth/authorize` | |
+| `authorizeAutoApproveUrl` | 自动授权（不显示确认授权页面） | `/oauth/authorize/auto` | |
 | `tokenUrl` | 获取/刷新Token | `/oauth/token` | |
 | `userinfoUrl` | 用户详情 | `/oauth/userinfo` | |
 | `registrationUrl` | 注册 | `/oauth/registration`  | （未提供） |
 | `endSessionUrl` | 退出登录 | `/oauth/logout` | |
 | `checkSessionUrl` | 校验登录状态 | `/oauth/check_session` | |
-| `jwksUrl` | 解密公钥 | `/.well-known/jwks.json` | |
-| `discoveryUrl` | 服务发现 | `/.well-known/openid-configuration` | |
+| `jwksUrl` | 解密数据的公钥 | `/.well-known/jwks.json` | |
+| `discoveryUrl` | OIDC 服务发现 | `/.well-known/openid-configuration` | |
+| `loginPageUrl` | 登录页面 | `/oauth/login` | 内置有登录表单 |
+| `externalLoginPageUrl` | 是否为外部登录页面 | `false` | 当 `loginPageUrl` 托管到第三方服务中时（`loginPageUrl` 所在域名<br> 和授权服务所在域名不一致），必须开启该配置 |
+| `confirmPageUrl` | 确认授权页面 | `/oauth/confirm` | 内置有确认授权的表单 |
+| `externalConfirmPageUrl` | 是否为外部确认授权页面 | `false` | 当 `confirmPageUrl` 托管到第三方服务中时（ `confirmPageUrl` 所<br> 在域名和授权服务所在域名不一致），必须开启该配置 |
 
 http 接口完整代码，请参考：[jap-ids-demo](https://gitee.com/fujieid/jap-ids-demo)
 
+::: tip
+1. 自定义登录页面，参考：
+   <ref-link :link='`/ids/custom-login-page`' :title="`自定义登录页面`"/>
+2. 自定义确认授权页面，参考：
+   <ref-link :link='`/ids/custom-confirm-page`' :title="`自定义确认授权页面`"/>
+:::
 ## 第五步：配置过滤器
 
 `jap-ids` 默认提供了两类过滤器：
@@ -280,15 +291,21 @@ public FilterRegistrationBean<IdsAccessTokenFilter> registeraccessTokenFilter() 
     registration.addUrlPatterns("/*");
     registration.addInitParameter("ignoreUrl",
             "/," +
-            "/oauth/login," +
-            "/oauth/error," +
-            "/oauth/confirm," +
-            "/oauth/authorize," +
-            "/oauth/token," +
-            "/oauth/check_session," +
-            "/oauth/registration," +
-            "/.well-known/jwks.json," +
-            "/.well-known/openid-configuration"
+                    "/oauth/login," +
+                    "/oauth/login/customize," +
+                    "/oauth/logout," +
+                    "/oauth/error," +
+                    "/oauth/confirm," +
+                    "/oauth/confirm/customize," +
+                    "/oauth/authorize," +
+                    "/oauth/authorize/auto," +
+                    "/oauth/token," +
+                    "/oauth/check_token," +
+                    "/oauth/check_session," +
+                    "/oauth/registration," +
+                    "/oauth/pkce/**," +
+                    "/.well-known/jwks.json," +
+                    "/.well-known/openid-configuration"
     );
     registration.setName("IdsAccessTokenFilter");
     registration.setOrder(1);
@@ -305,15 +322,21 @@ public FilterRegistrationBean<IdsUserStatusFilter> registerUserStatusFilter() {
     registration.addUrlPatterns("/*");
     registration.addInitParameter("ignoreUrl",
             "/," +
-            "/oauth/login," +
-            "/oauth/error," +
-            "/oauth/confirm," +
-            "/oauth/authorize," +
-            "/oauth/token," +
-            "/oauth/check_session," +
-            "/oauth/registration," +
-            "/.well-known/jwks.json," +
-            "/.well-known/openid-configuration"
+                    "/oauth/login," +
+                    "/oauth/login/customize," +
+                    "/oauth/logout," +
+                    "/oauth/error," +
+                    "/oauth/confirm," +
+                    "/oauth/confirm/customize," +
+                    "/oauth/authorize," +
+                    "/oauth/authorize/auto," +
+                    "/oauth/token," +
+                    "/oauth/check_token," +
+                    "/oauth/check_session," +
+                    "/oauth/registration," +
+                    "/oauth/pkce/**," +
+                    "/.well-known/jwks.json," +
+                    "/.well-known/openid-configuration"
     );
     registration.setName("IdsUserStatusFilter");
     registration.setOrder(1);
@@ -339,18 +362,23 @@ public FilterRegistrationBean<IdsUserStatusFilter> registerUserStatusFilter() {
 
 ## 总结
 
-基于以上步骤， 就可基于 `jap-ids` 快速搭建起来一套基于标准协议的 OAuth2.0 授权服务。
+基于以上步骤， 就可使用 `jap-ids` 快速搭建起来一套标准的 OAuth2.0 授权服务。
 
-**后续我们会提供类似 Spring Security OAuth2 的项目集成包，做到一键集成**
+**后续我们会提供封装好的 SDK，方便开发者一键集成。**
 
 更多功能，请参考 :
 
-<ref-link :link='`/ids/quickstart`' :title="`快速开始`"/>
+
+## 更多功能
+
+<ref-link :link='`/ids/custom-login-page`' :title="`自定义登录页面`"/>
+<ref-link :link='`/ids/custom-confirm-page`' :title="`自定义确认授权页面`"/>
 <ref-link :link='`/ids/scope`' :title="`自定义 scope`"/>
-<ref-link :link='`/ids/pkce`' :title="`使用 PKCE 模式`"/>
 <ref-link :link='`/ids/cache`' :title="`自定义缓存`"/>
 <ref-link :link='`/ids/jwks`' :title="`自定义 Token 加密密钥`"/>
-<ref-link :link='`/ids/multi-jwks`' :title="`一客户端一密`"/>
+<ref-link :link='`/ids/pkce`' :title="`使用 PKCE 模式`"/>
+<ref-link :link='`/ids/auto-approve`' :title="`自动授权`"/>
+<ref-link :link='`/ids/error_code`' :title="`错误代码`"/>
 
 
 

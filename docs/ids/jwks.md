@@ -61,3 +61,15 @@ new JwtConfig()
 | `jwtVerificationType` | jwt令牌的验证方式 | - `HTTPS_JWKS_ENDPOINT` 使用 https jwks 端点(http 接口)验证 <br> - `JWKS` 使用 `jwks` json 配置 |
 | `jwksJson` | jwks json字符串 |  |
 | `tokenSigningAlg` | jwt令牌加密算法 | 和 jwks 密钥生成算法一致 |
+
+
+## 更多功能
+
+<ref-link :link='`/ids/quickstart`' :title="`快速开始`"/>
+<ref-link :link='`/ids/custom-login-page`' :title="`自定义登录页面`"/>
+<ref-link :link='`/ids/custom-confirm-page`' :title="`自定义确认授权页面`"/>
+<ref-link :link='`/ids/scope`' :title="`自定义 scope`"/>
+<ref-link :link='`/ids/cache`' :title="`自定义缓存`"/>
+<ref-link :link='`/ids/pkce`' :title="`使用 PKCE 模式`"/>
+<ref-link :link='`/ids/auto-approve`' :title="`自动授权`"/>
+<ref-link :link='`/ids/error_code`' :title="`错误代码`"/>

@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" :title="title" :target="blank ? '_blank' : ''" class="ref-link"> {{ title }}</a>
+  <a :href="link" :title="title" :target="blank ? '_blank' : ''" class="ref-link"><a-icon type="link" /> {{ title }}</a>
 </template>
 
 <script>
@@ -30,5 +30,8 @@ export default {
   border-radius: 4px;
   display: block;
   background: white;
+}
+.custom-block.tip a {
+  color: #3eaf7c!important;
 }
 </style>
