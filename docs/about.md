@@ -41,13 +41,13 @@
 	<strong>开源地址：</strong> <a target="_blank" href='https://gitee.com/fujieid/jap'>Gitee</a> | <a target="_blank" href='https://github.com/fujieid/jap'>Github</a> | <a target="_blank" href='https://codechina.csdn.net/fujieid/jap'>CodeChina</a>
 </p>
 <p align="center">
-	<strong>社区论坛：</strong> <a target="_blank" href='https://discuss.justauth.plus'>https://discuss.justauth.plus</a>
-</p>
-<p align="center">
 	<strong>API 文档：</strong> <a target="_blank" href='https://apidoc.gitee.com/fujieid/jap'>https://apidoc.gitee.com/fujieid/jap</a>
 </p>
 <p align="center">
 	<strong>开发者文档：</strong> <a target="_blank" href='https://justauth.plus'>https://justauth.plus</a>
+</p>
+<p align="center">
+	<strong>社区论坛：</strong> <a target="_blank" href='https://discuss.justauth.plus'>https://discuss.justauth.plus</a>
 </p>
 
 ## JAP 是什么？
