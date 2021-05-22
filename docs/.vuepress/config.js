@@ -222,6 +222,7 @@ module.exports = {
                     children: [
                         ['/demo/front-end-and-backend', '前后端分离架构下使用 JAP'],
                         ['/demo/springboot', 'SpringBoot 中使用 JAP'],
+                        ['/demo/ids-demo', 'IDS demo'],
                     ]
                 },
                 ['contributors', '贡献者'],

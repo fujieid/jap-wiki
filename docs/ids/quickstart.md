@@ -14,9 +14,15 @@ title: 快速开始
 <dependency>
     <groupId>com.fujieid</groupId>
     <artifactId>jap-ids</artifactId>
-    <version>1.0.2</version>
+    <version>{latest-version}</version>
 </dependency>
 ```
+
+可选版本：
+
+- 稳定版（发版较快照版慢）: <img src="https://img.shields.io/github/v/release/fujieid/jap?style=flat-square" ></img>
+- 快照版（实时更新最新功能，但不保证稳定）：<img src="https://img.shields.io/nexus/s/https/oss.sonatype.org/com.fujieid/jap-bom.svg?style=flat-square" ></img>
+
 
 ## 第二步：实现 ids 接口
 
