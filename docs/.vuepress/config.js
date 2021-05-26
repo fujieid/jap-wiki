@@ -175,7 +175,8 @@ module.exports = {
                 text: '🚀 开源地址',
                 items: [
                     {text: 'Gitee', link: 'https://gitee.com/fujieid/jap', target: '_blank'},
-                    {text: 'Github', link: 'https://github.com/fujieid/jap', target: '_blank'}
+                    {text: 'Github', link: 'https://github.com/fujieid/jap', target: '_blank'},
+                    {text: 'CodeChina', link: 'https://codechina.csdn.net/fujieid/jap', target: '_blank'}
                 ]
             },
         ],

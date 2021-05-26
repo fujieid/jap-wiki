@@ -40,7 +40,7 @@ title: 名词解释
 
 ## JAP 中的关键字
 
-- `strategy` 策略，JAP 中每一类登录方式，都对应一种策略，熟悉 JustAuth 的开发者应该清楚，JustAuth 中的 Request 就相当于一类策略。
+- `strategy` 策略，JAP 中每一类登录方式，都对应一种策略，熟悉 JustAuth 的开发者应该清楚，JAP 中的 `xxStrategy` 就类似于 JustAuth 中的 `xxRequest`。
 
 ## 参考资料
 

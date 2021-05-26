@@ -2,24 +2,6 @@
 title: IDS OAuth 2.0 服务端
 ---
 
-## 须知
-
-::: tip 关于分支
-- 开发分支（`dev`）：最新代码，不保证稳定，实时发布 `SNAPSHOT` ，同时提交 `PR` 也是在这个分支。
-- 主分支（`master`）：保护分支，稳定版代码，用于发布稳定版版本，**不接受任何 `PR`**。
-:::
-
-::: tip 关于版本
-- 稳定版：类似 `v1.0.0`，没有其他后缀，为官方推荐版本，可以用于生产环境。
-- 快照版：类似 `v1.0.0-SNAPSHOT`，快照版会实时更新，想尝试新功能的开发者可以在开发环境使用 `SNAPSHOT` 版。
-:::
-
-::: warning
-快照版不可用于生产环境！！！    
-快照版不可用于生产环境！！！    
-快照版不可用于生产环境！！！    
-:::
-
 ## IDS OAuth 2.0 服务端
 
 `jap-ids` 是基于 [RFC6749](https://tools.ietf.org/html/rfc6749)、[RFC7636](https://tools.ietf.org/html/rfc7636)、[RFC7033](https://tools.ietf.org/html/rfc7033)等标准协议和 [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html) 认证协议，实现的一款轻量级、业务解耦、开箱即用的新一代国产授权认证框架。
