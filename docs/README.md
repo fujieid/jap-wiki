@@ -30,7 +30,7 @@ features:
   details: 基于模块化设计、开发，针对每一种登录场景，比如账号密码、OAuth、OIDC等，都单独提供了独有的模块化解决方案。
 - title: 多种语言支持
   details: 支持多种语言的 SDK，如：Java、NodeJS、Python、PHP、GO等。
-footer: Written by <a href="https://github.com/zhangyd-c" target="_blank">Yadong.Zhang</a> | <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备2020044519号-2</a>
+footer: <p>友情链接：<a href="https://uniadmin.jiangruyi.com" target="_blank">UniAdmin</a> | <a href="https://jiangruyi.com" target="_blank">江如意的博客</a></p>Written by <a href="https://github.com/zhangyd-c" target="_blank">Yadong.Zhang</a> | <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备2020044519号-2</a>
 footerColumn: 3
 footerWrap: 
 - headline: About

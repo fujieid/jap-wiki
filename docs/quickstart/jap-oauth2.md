@@ -186,7 +186,7 @@ public class Oauth2Controller {
     private JapUserService japUserService;
 
     @RequestMapping("/login/jai")
-    public void renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public ModelAndView renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Oauth2Strategy oauth2Strategy = new Oauth2Strategy(japUserService, new JapConfig());
         OAuthConfig config = new OAuthConfig();
         config.setPlatform("jai")
@@ -265,7 +265,7 @@ public class Oauth2Controller {
     private JapUserService japUserService;
 
     @RequestMapping("/login/implicit/jai")
-    public void renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public ModelAndView renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Oauth2Strategy oauth2Strategy = new Oauth2Strategy(japUserService, new JapConfig());
         OAuthConfig config = new OAuthConfig();
         config.setPlatform("jai")
@@ -340,7 +340,7 @@ public class Oauth2Controller {
     private JapUserService japUserService;
 
     @RequestMapping("/login/password/jai")
-    public void renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public ModelAndView renderAuth(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Oauth2Strategy oauth2Strategy = new Oauth2Strategy(japUserService, new JapConfig());
         OAuthConfig config = new OAuthConfig();
         config.setPlatform("jai")

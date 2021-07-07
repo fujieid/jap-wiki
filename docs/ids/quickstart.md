@@ -319,7 +319,8 @@ public FilterRegistrationBean<IdsAccessTokenFilter> registeraccessTokenFilter() 
 }
 ```
 
-### 用户登录状态过滤器
+### 用户登录状态过滤器 <a-tag color="orange">后期可能会被删除</a-tag>
+
 ```java
 @Bean
 public FilterRegistrationBean<IdsUserStatusFilter> registerUserStatusFilter() {
