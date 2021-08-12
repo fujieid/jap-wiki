@@ -71,7 +71,6 @@ footerWrap:
     details: 完整的线上解决方案（企业开发必备）
 ---
 
-<Notify :title="'开源软件供应链点亮计划 - 暑期2021'" :icon="'heart'" :iconColor="'#4051b5'" :link="'https://justauth.wiki/resource/summer2021.html'" :desc="'JustAuthPlus（JAP）已经加入“开源软件供应链点亮计划”，欢迎各位在校学员踊跃参与，共襄盛举！'"/>
 
 <Notify :title="'JustAuthPlus（JAP）技术白皮书正式发布！'" :icon="'fire'" :iconColor="'red'" :link="'https://justauth.plus/paper/JAP-paper-V1.0.0.pdf'" :desc="'JustAuthPlus（JAP）技术白皮书正式发布，带您更加细致、深入的了解 JAP 的技术方案以及 JAP 的现在和未来。请查阅！'"/>
 
