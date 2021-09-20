@@ -1,21 +1,33 @@
 {
-  "name": "JAP",
+  "name": "justauth.plus",
   "version": "1.0.0",
-  "description": "",
-  "author": "yadong.zhang <yadong.zhang0415@gmail.com>",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "editFm": "node utils/editFrontmatter.js",
+    "baiduPush": "node utils/baiduPush.js https://justauth.plus && bash baiduPush.sh",
+    "publish": "cd ./theme-vdoing && npm publish && cd ../ && npm run updateTheme",
+    "updateTheme": "npm uninstall vuepress-theme-vdoing && rm -rf node_modules && npm i && npm i vuepress-theme-vdoing -D"
   },
+  "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.8.0",
-    "vuepress-plugin-homebadge": "^0.1.0"
+    "dayjs": "^1.9.7",
+    "inquirer": "^7.1.0",
+    "json2yaml": "^1.1.0",
+    "vuepress": "1.8.0",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-baidu-tongji": "^1.0.1",
+    "vuepress-plugin-demo-block": "^0.7.2",
+    "vuepress-plugin-one-click-copy": "^1.0.2",
+    "vuepress-plugin-thirdparty-search": "^1.0.2",
+    "vuepress-plugin-zooming": "^1.1.7",
+    "vuepress-theme-vdoing": "^1.8.3",
+    "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "core-js": "^2.6.11",
-    "gitalk": "^1.7.0",
-    "vuepress-theme-antdocs": "^1.2.2"
-  },
-  "main": "index.js",
-  "license": "LGPL"
+    "json-fn": "^1.1.1",
+    "vuepress-plugin-chart": "^0.3.0",
+    "vuepress-plugin-comment": "^0.7.3"
+  }
 }
