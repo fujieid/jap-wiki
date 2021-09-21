@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 模块依赖.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="11.0743in" height="5.98695in"
+		viewBox="0 0 797.352 431.06" xml:space="preserve" color-interpolation-filters="sRGB" class="st9">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#92cddc;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st2 {fill:#000000;font-family:Calibri;font-size:1.00001em}
+		.st3 {fill:#b7dde8;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st4 {fill:#f2dcda;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st5 {font-size:1em}
+		.st6 {marker-end:url(#mrkr12-80);stroke:#000000;stroke-dasharray:7,5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st7 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.28409090909091}
+		.st8 {fill:#d7e3bf;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st9 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend12">
+			<path d="M 3 1 L 0 0 L 3 -1 " style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr12-80" class="st7" v:arrowType="12" v:arrowSize="2" orient="auto" markerUnits="strokeWidth"
+				overflow="visible">
+			<use xlink:href="#lend12" transform="scale(-3.52,-3.52) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="CompCount" v:prompt="" v:val="VT0(8):26"/>
+			<v:ud v:nameU="ProInterfaceCnt" v:prompt="" v:val="VT0(4):26"/>
+			<v:ud v:nameU="ReqInterfaceCnt" v:prompt="" v:val="VT0(12):26"/>
+		</v:userDefs>
+		<title>页-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="容器" v:index="0"/>
+		<v:layer v:name="连接线" v:index="1"/>
+		<g id="group1-1" transform="translate(323.209,-246.164)" v:mID="1" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="Stereotype" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="MinWidth" v:prompt="" v:val="VT0(2.244094488189):24"/>
+				<v:ud v:nameU="MinHeight" v:prompt="" v:val="VT0(0.6496062992126):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Container)"/>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(ContainerStyleDefaults)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDContainerLocked" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoHighlight" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerStyle" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerStyleCount" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvSDContainerRequiredCategories" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDContainerExcludedCategories" v:prompt="" v:val="VT4(DoNotContain)"/>
+				<v:ud v:nameU="msvSDHeadingStyle" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDHeadingStyleCount" v:prompt="" v:val="VT0(4):26"/>
+				<v:ud v:nameU="HeadingSide" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="HeadingSpan" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="HeadingAlign" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="RTL" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereotypeOffset" v:prompt="" v:val="VT0(0.06):24"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0.0212):24"/>
+			</v:userDefs>
+			<title>组件</title>
+			<g id="shape2-2" v:mID="2" v:groupContext="shape" v:layerMember="0">
+				<title>工作表.2</title>
+				<rect x="0" y="371.706" width="161.575" height="59.3542" class="st1"/>
+			</g>
+			<g id="group3-4" transform="translate(126.142,-26.7558)" v:mID="3" v:groupContext="group" v:layerMember="0">
+				<title>工作表.3</title>
+				<g id="shape4-5" v:mID="4" v:groupContext="shape" v:layerMember="0" transform="translate(6.67232,0)">
+					<title>工作表.4</title>
+					<rect x="0" y="405.548" width="18.8395" height="25.5118" class="st1"/>
+				</g>
+				<g id="shape5-7" v:mID="5" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-16.3473)">
+					<title>工作表.5</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st1"/>
+				</g>
+				<g id="shape6-9" v:mID="6" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-6.76139)">
+					<title>工作表.6</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st1"/>
+				</g>
+			</g>
+			<g id="shape7-11" v:mID="7" v:groupContext="shape" v:layerMember="0" transform="translate(0,-32.6305)">
+				<title>Class.11</title>
+				<desc>jap-common</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="80.7874" cy="419.858" width="105.03" height="22.4037"/>
+				<text x="49.88" y="423.46" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>jap-common</text>			</g>
+		</g>
+		<g id="group17-13" transform="translate(219.555,-18.125)" v:mID="17" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="Stereotype" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="MinWidth" v:prompt="" v:val="VT0(2.244094488189):24"/>
+				<v:ud v:nameU="MinHeight" v:prompt="" v:val="VT0(0.6496062992126):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Container)"/>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(ContainerStyleDefaults)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDContainerLocked" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoHighlight" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerStyle" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerStyleCount" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvSDContainerRequiredCategories" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDContainerExcludedCategories" v:prompt="" v:val="VT4(DoNotContain)"/>
+				<v:ud v:nameU="msvSDHeadingStyle" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDHeadingStyleCount" v:prompt="" v:val="VT0(4):26"/>
+				<v:ud v:nameU="HeadingSide" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="HeadingSpan" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="HeadingAlign" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="RTL" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereotypeOffset" v:prompt="" v:val="VT0(0.06):24"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0.0212):24"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>组件.17</title>
+			<g id="shape18-14" v:mID="18" v:groupContext="shape" v:layerMember="0">
+				<title>工作表.18</title>
+				<rect x="0" y="371.706" width="161.575" height="59.3542" class="st3"/>
+			</g>
+			<g id="group19-16" transform="translate(126.142,-26.7558)" v:mID="19" v:groupContext="group" v:layerMember="0">
+				<title>工作表.19</title>
+				<g id="shape20-17" v:mID="20" v:groupContext="shape" v:layerMember="0" transform="translate(6.67232,0)">
+					<title>工作表.20</title>
+					<rect x="0" y="405.548" width="18.8395" height="25.5118" class="st3"/>
+				</g>
+				<g id="shape21-19" v:mID="21" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-16.3473)">
+					<title>工作表.21</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st3"/>
+				</g>
+				<g id="shape22-21" v:mID="22" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-6.76139)">
+					<title>工作表.22</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st3"/>
+				</g>
+			</g>
+			<g id="shape23-23" v:mID="23" v:groupContext="shape" v:layerMember="0" transform="translate(0,-32.6305)">
+				<title>Class.11</title>
+				<desc>jap-simple</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="80.7874" cy="419.858" width="105.03" height="22.4037"/>
+				<text x="55.46" y="423.46" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>jap-simple</text>			</g>
+		</g>
+		<g id="group29-25" transform="translate(22.6772,-18.125)" v:mID="29" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="Stereotype" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="MinWidth" v:prompt="" v:val="VT0(2.244094488189):24"/>
+				<v:ud v:nameU="MinHeight" v:prompt="" v:val="VT0(0.6496062992126):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Container)"/>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(ContainerStyleDefaults)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDContainerLocked" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoHighlight" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerStyle" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerStyleCount" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvSDContainerRequiredCategories" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDContainerExcludedCategories" v:prompt="" v:val="VT4(DoNotContain)"/>
+				<v:ud v:nameU="msvSDHeadingStyle" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDHeadingStyleCount" v:prompt="" v:val="VT0(4):26"/>
+				<v:ud v:nameU="HeadingSide" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="HeadingSpan" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="HeadingAlign" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="RTL" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereotypeOffset" v:prompt="" v:val="VT0(0.06):24"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0.0212):24"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(3):26"/>
+			</v:userDefs>
+			<title>组件.29</title>
+			<g id="shape30-26" v:mID="30" v:groupContext="shape" v:layerMember="0">
+				<title>工作表.30</title>
+				<rect x="0" y="371.706" width="161.575" height="59.3542" class="st3"/>
+			</g>
+			<g id="group31-28" transform="translate(126.142,-26.7558)" v:mID="31" v:groupContext="group" v:layerMember="0">
+				<title>工作表.31</title>
+				<g id="shape32-29" v:mID="32" v:groupContext="shape" v:layerMember="0" transform="translate(6.67232,0)">
+					<title>工作表.32</title>
+					<rect x="0" y="405.548" width="18.8395" height="25.5118" class="st3"/>
+				</g>
+				<g id="shape33-31" v:mID="33" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-16.3473)">
+					<title>工作表.33</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st3"/>
+				</g>
+				<g id="shape34-33" v:mID="34" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-6.76139)">
+					<title>工作表.34</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st3"/>
+				</g>
+			</g>
+			<g id="shape35-35" v:mID="35" v:groupContext="shape" v:layerMember="0" transform="translate(0,-32.6305)">
+				<title>Class.11</title>
+				<desc>jap-social</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="80.7874" cy="419.858" width="105.03" height="22.4037"/>
+				<text x="57.81" y="423.46" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>jap-social</text>			</g>
+		</g>
+		<g id="group41-37" transform="translate(423.705,-18.125)" v:mID="41" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="Stereotype" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="MinWidth" v:prompt="" v:val="VT0(2.244094488189):24"/>
+				<v:ud v:nameU="MinHeight" v:prompt="" v:val="VT0(0.6496062992126):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Container)"/>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(ContainerStyleDefaults)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDContainerLocked" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoHighlight" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerStyle" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerStyleCount" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvSDContainerRequiredCategories" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDContainerExcludedCategories" v:prompt="" v:val="VT4(DoNotContain)"/>
+				<v:ud v:nameU="msvSDHeadingStyle" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDHeadingStyleCount" v:prompt="" v:val="VT0(4):26"/>
+				<v:ud v:nameU="HeadingSide" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="HeadingSpan" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="HeadingAlign" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="RTL" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereotypeOffset" v:prompt="" v:val="VT0(0.06):24"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0.0212):24"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(4):26"/>
+			</v:userDefs>
+			<title>组件.41</title>
+			<g id="shape42-38" v:mID="42" v:groupContext="shape" v:layerMember="0">
+				<title>工作表.42</title>
+				<rect x="0" y="371.706" width="161.575" height="59.3542" class="st3"/>
+			</g>
+			<g id="group43-40" transform="translate(126.142,-26.7558)" v:mID="43" v:groupContext="group" v:layerMember="0">
+				<title>工作表.43</title>
+				<g id="shape44-41" v:mID="44" v:groupContext="shape" v:layerMember="0" transform="translate(6.67232,0)">
+					<title>工作表.44</title>
+					<rect x="0" y="405.548" width="18.8395" height="25.5118" class="st3"/>
+				</g>
+				<g id="shape45-43" v:mID="45" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-16.3473)">
+					<title>工作表.45</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st3"/>
+				</g>
+				<g id="shape46-45" v:mID="46" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-6.76139)">
+					<title>工作表.46</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st3"/>
+				</g>
+			</g>
+			<g id="shape47-47" v:mID="47" v:groupContext="shape" v:layerMember="0" transform="translate(0,-32.6305)">
+				<title>Class.11</title>
+				<desc>jap-oauth2</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="80.7874" cy="419.858" width="105.03" height="22.4037"/>
+				<text x="54.09" y="423.46" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>jap-oauth2</text>			</g>
+		</g>
+		<g id="group57-49" transform="translate(613.701,-18.125)" v:mID="57" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="Stereotype" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="MinWidth" v:prompt="" v:val="VT0(2.244094488189):24"/>
+				<v:ud v:nameU="MinHeight" v:prompt="" v:val="VT0(0.6496062992126):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Container)"/>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(ContainerStyleDefaults)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDContainerLocked" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoHighlight" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerStyle" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerStyleCount" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvSDContainerRequiredCategories" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDContainerExcludedCategories" v:prompt="" v:val="VT4(DoNotContain)"/>
+				<v:ud v:nameU="msvSDHeadingStyle" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDHeadingStyleCount" v:prompt="" v:val="VT0(4):26"/>
+				<v:ud v:nameU="HeadingSide" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="HeadingSpan" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="HeadingAlign" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="RTL" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereotypeOffset" v:prompt="" v:val="VT0(0.06):24"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0.0212):24"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(5):26"/>
+			</v:userDefs>
+			<title>组件.57</title>
+			<g id="shape58-50" v:mID="58" v:groupContext="shape" v:layerMember="0">
+				<title>工作表.58</title>
+				<rect x="0" y="371.706" width="161.575" height="59.3542" class="st3"/>
+			</g>
+			<g id="group59-52" transform="translate(126.142,-26.7558)" v:mID="59" v:groupContext="group" v:layerMember="0">
+				<title>工作表.59</title>
+				<g id="shape60-53" v:mID="60" v:groupContext="shape" v:layerMember="0" transform="translate(6.67232,0)">
+					<title>工作表.60</title>
+					<rect x="0" y="405.548" width="18.8395" height="25.5118" class="st3"/>
+				</g>
+				<g id="shape61-55" v:mID="61" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-16.3473)">
+					<title>工作表.61</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st3"/>
+				</g>
+				<g id="shape62-57" v:mID="62" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-6.76139)">
+					<title>工作表.62</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st3"/>
+				</g>
+			</g>
+			<g id="shape63-59" v:mID="63" v:groupContext="shape" v:layerMember="0" transform="translate(0,-32.6305)">
+				<title>Class.11</title>
+				<desc>jap-oidc</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="80.7874" cy="419.858" width="105.03" height="22.4037"/>
+				<text x="61.26" y="423.46" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>jap-oidc</text>			</g>
+		</g>
+		<g id="group71-61" transform="translate(22.6772,-246.164)" v:mID="71" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="Stereotype" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="MinWidth" v:prompt="" v:val="VT0(2.244094488189):24"/>
+				<v:ud v:nameU="MinHeight" v:prompt="" v:val="VT0(0.6496062992126):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Container)"/>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(ContainerStyleDefaults)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDContainerLocked" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoHighlight" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerStyle" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerStyleCount" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvSDContainerRequiredCategories" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDContainerExcludedCategories" v:prompt="" v:val="VT4(DoNotContain)"/>
+				<v:ud v:nameU="msvSDHeadingStyle" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDHeadingStyleCount" v:prompt="" v:val="VT0(4):26"/>
+				<v:ud v:nameU="HeadingSide" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="HeadingSpan" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="HeadingAlign" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="RTL" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereotypeOffset" v:prompt="" v:val="VT0(0.06):24"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0.0212):24"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(6):26"/>
+			</v:userDefs>
+			<title>组件.71</title>
+			<g id="shape72-62" v:mID="72" v:groupContext="shape" v:layerMember="0">
+				<title>工作表.72</title>
+				<rect x="0" y="371.706" width="161.575" height="59.3542" class="st4"/>
+			</g>
+			<g id="group73-64" transform="translate(126.142,-26.7558)" v:mID="73" v:groupContext="group" v:layerMember="0">
+				<title>工作表.73</title>
+				<g id="shape74-65" v:mID="74" v:groupContext="shape" v:layerMember="0" transform="translate(6.67232,0)">
+					<title>工作表.74</title>
+					<rect x="0" y="405.548" width="18.8395" height="25.5118" class="st4"/>
+				</g>
+				<g id="shape75-67" v:mID="75" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-16.3473)">
+					<title>工作表.75</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st4"/>
+				</g>
+				<g id="shape76-69" v:mID="76" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-6.76139)">
+					<title>工作表.76</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st4"/>
+				</g>
+			</g>
+			<g id="shape77-71" v:mID="77" v:groupContext="shape" v:layerMember="0" transform="translate(0,-32.6305)">
+				<title>Class.11</title>
+				<desc>spring-boot-starter-redis</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="80.7874" cy="419.858" width="105.03" height="22.4037"/>
+				<text x="32.43" y="416.26" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>spring-boot-starter-<tspan
+							x="68.83" dy="1.2em" class="st5">redis</tspan></text>			</g>
+		</g>
+		<g id="group117-74" transform="translate(323.209,-268.754)" v:mID="117" v:groupContext="group" v:layerMember="1">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.030708661417322):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030708661417323):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(-0.028949361304132):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(1.3322676295502E-15):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(-0.02894936130413):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(3.1415926535897):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(3.1415926535897):32"/>
+			</v:userDefs>
+			<title>依赖关系.117</title>
+			<g id="shape117-75" v:mID="117" v:groupContext="groupContent" v:layerMember="1">
+				<path d="M0 423.97 L-46.57 423.97 L-138.96 423.97" class="st6"/>
+			</g>
+		</g>
+		<g id="group122-81" transform="translate(323.209,-353.706)" v:mID="122" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="Stereotype" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="MinWidth" v:prompt="" v:val="VT0(2.244094488189):24"/>
+				<v:ud v:nameU="MinHeight" v:prompt="" v:val="VT0(0.6496062992126):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Container)"/>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(ContainerStyleDefaults)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDContainerLocked" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoHighlight" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="msvSDContainerStyle" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerStyleCount" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvSDContainerRequiredCategories" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDContainerExcludedCategories" v:prompt="" v:val="VT4(DoNotContain)"/>
+				<v:ud v:nameU="msvSDHeadingStyle" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="msvSDHeadingStyleCount" v:prompt="" v:val="VT0(4):26"/>
+				<v:ud v:nameU="HeadingSide" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="HeadingSpan" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="HeadingAlign" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="RTL" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereotypeOffset" v:prompt="" v:val="VT0(0.06):24"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0.0212):24"/>
+				<v:ud v:nameU="Label" v:prompt="" v:val="VT0(7):26"/>
+			</v:userDefs>
+			<title>组件.122</title>
+			<g id="shape123-82" v:mID="123" v:groupContext="shape" v:layerMember="0">
+				<title>工作表.123</title>
+				<rect x="0" y="371.706" width="161.575" height="59.3542" class="st8"/>
+			</g>
+			<g id="group124-84" transform="translate(126.142,-26.7558)" v:mID="124" v:groupContext="group" v:layerMember="0">
+				<title>工作表.124</title>
+				<g id="shape125-85" v:mID="125" v:groupContext="shape" v:layerMember="0" transform="translate(6.67232,0)">
+					<title>工作表.125</title>
+					<rect x="0" y="405.548" width="18.8395" height="25.5118" class="st8"/>
+				</g>
+				<g id="shape126-87" v:mID="126" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-16.3473)">
+					<title>工作表.126</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st8"/>
+				</g>
+				<g id="shape127-89" v:mID="127" v:groupContext="shape" v:layerMember="0" transform="translate(-0.0981224,-6.76139)">
+					<title>工作表.127</title>
+					<rect x="0" y="427.233" width="12.7559" height="3.82677" class="st8"/>
+				</g>
+			</g>
+			<g id="shape128-91" v:mID="128" v:groupContext="shape" v:layerMember="0" transform="translate(0,-32.6305)">
+				<title>Class.11</title>
+				<desc>jap-spring-boot-starter</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="80.7874" cy="419.858" width="105.03" height="22.4037"/>
+				<text x="41.38" y="416.26" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>jap-spring-boot-<tspan
+							x="64.38" dy="1.2em" class="st5">starter</tspan></text>			</g>
+		</g>
+		<g id="group132-94" transform="translate(396.91,-305.518)" v:mID="132" v:groupContext="group" v:layerMember="1">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.030708661417322):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030708661417323):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(-8.8817841970013E-16):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.010039233844573):24"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.010039233844573):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.570796326795):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5707963267949):32"/>
+			</v:userDefs>
+			<title>依赖关系.132</title>
+			<g id="shape132-95" v:mID="132" v:groupContext="groupContent" v:layerMember="1">
+				<path d="M7.09 431.06 L7.09 382.87" class="st6"/>
+			</g>
+		</g>
+		<g id="group137-100" transform="translate(96.378,-77.4792)" v:mID="137" v:groupContext="group" v:layerMember="1">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.030708661417322):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030708661417323):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.035142571654554):24"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(-2.2204460492503E-16):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.035142571654561):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5707963267949):32"/>
+			</v:userDefs>
+			<title>依赖关系.137</title>
+			<g id="shape137-101" v:mID="137" v:groupContext="groupContent" v:layerMember="1">
+				<path d="M7.09 431.06 L7.09 262.38" class="st6"/>
+			</g>
+		</g>
+		<g id="group142-106" transform="translate(300.342,-77.4792)" v:mID="142" v:groupContext="group" v:layerMember="1">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.030708661417322):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030708661417323):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.056737129668704):24"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(6.3060667798709E-14):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.056737129668702):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5707963267938):32"/>
+			</v:userDefs>
+			<title>依赖关系</title>
+			<g id="shape142-107" v:mID="142" v:groupContext="groupContent" v:layerMember="1">
+				<path d="M0 431.06 L0 366.26 L103.65 366.26 L103.65 262.38" class="st6"/>
+			</g>
+		</g>
+		<g id="group147-112" transform="translate(504.492,-77.4792)" v:mID="147" v:groupContext="group" v:layerMember="1">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.030708661417322):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030708661417323):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.056079244588931):24"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(5.5955240441108E-14):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.056079244589182):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5707963267939):32"/>
+			</v:userDefs>
+			<title>依赖关系.147</title>
+			<g id="shape147-113" v:mID="147" v:groupContext="groupContent" v:layerMember="1">
+				<path d="M0 431.06 L0 365.51 L-100.5 365.51 L-100.5 262.38" class="st6"/>
+			</g>
+		</g>
+		<g id="group152-118" transform="translate(654.094,-77.4792)" v:mID="152" v:groupContext="group" v:layerMember="1">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.030708661417322):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030708661417323):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.087246360502261):24"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(1.3056222769592E-13):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.087246360502639):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5707963267934):32"/>
+			</v:userDefs>
+			<title>依赖关系.152</title>
+			<g id="shape152-119" v:mID="152" v:groupContext="groupContent" v:layerMember="1">
+				<path d="M0 431.06 L0 331.94 L-250.1 331.94 L-250.1 262.38" class="st6"/>
+			</g>
+		</g>
+		<g id="group157-124" transform="translate(143.858,-77.4792)" v:mID="157" v:groupContext="group" v:layerMember="1">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.030708661417322):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030708661417323):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.089337995950817):24"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(3.9079850466806E-14):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.089337995950821):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5707963267945):32"/>
+			</v:userDefs>
+			<title>依赖关系.157</title>
+			<g id="shape157-125" v:mID="157" v:groupContext="groupContent" v:layerMember="1">
+				<path d="M0 431.06 L0 331.94 L260.14 331.94 L260.14 262.38" class="st6"/>
+			</g>
+		</g>
+	</g>
+</svg>
