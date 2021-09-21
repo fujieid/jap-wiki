@@ -18,6 +18,9 @@ case "$1" in
   'p')
     bin/push.sh
 	;;
+  'pd')
+    bin/push-dev.sh
+	;;
   'd')
     bin/deploy.sh
 	;;
