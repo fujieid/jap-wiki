@@ -106,11 +106,19 @@ module.exports = [
         ],
     },
     {
+        text: '技术博客',
+        items: [
+            { text: '教程', link: '/blog/tutorials/' },
+            { text: '投稿', link: '/blog/contribution/' },
+        ],
+    },
+    {
         text: '关于',
         items: [
             {text: '关于', link: '/about/me/'},
             {text: '友情链接', link: '/about/friends/'},
             {text: '捐赠列表', link: '/about/donate/'},
+            {text: '其他开源', link: '/about/opensource/'},
             {text: '更新记录', link: '/about/update/'},
         ],
     },

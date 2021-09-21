@@ -20,7 +20,7 @@
 
 module.exports = {
   homeSidebarB:
-    `<div style="padding: 0.95rem">
+      `<div style="padding: 0.95rem">
     <p style="
       color: var(--textColor);
       opacity: 0.9;
@@ -28,8 +28,9 @@ module.exports = {
       font-weight: bold;
       margin: 0 0 8px 0;
     ">公众号</p>
-    <img src="/codeacode.jpg"  style="width:100%;" />
+    <img src="codeacode.jpg"  style="width:100%;" />
     <p>
+        “码一码”公众号，更多内容，等你去探索~
     </p>
     </div>`,
   // `<!-- 纵向自适应 -->

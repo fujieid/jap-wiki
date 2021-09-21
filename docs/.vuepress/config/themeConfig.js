@@ -16,9 +16,9 @@ module.exports = {
 
   //*** 以下配置是Vdoing主题改动和新增的配置 ***//
 
-  category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
-  tag: false, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
-  archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
+  category: true, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
+  tag: true, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
+  archive: true, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
   categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
   // bodyBgImg: [
@@ -101,5 +101,5 @@ module.exports = {
         'Copyright © 2021-2040 FUJIE. All rights reserved. 北京符节科技有限公司版权所有 | ' +
         '<a href="http://beian.miit.gov.cn/" target="_blank">京ICP备2020044519号-4</a>', // 博客版权信息，支持a标签
   },
-  // htmlModules // 插入hmtl(广告)模块
+  htmlModules // 插入hmtl(广告)模块
 }
