@@ -63,7 +63,11 @@
 export default {
   data () {
     return {
-      pageData: null,
+      pageData: {
+        "imgUrl": "/img/web.png",
+        "title": '',
+        "description": ''
+      },
       isStructuring: true,
       appointDir: {}
     }
