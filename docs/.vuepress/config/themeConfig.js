@@ -8,7 +8,7 @@ module.exports = {
   sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
   logo: '/img/logo.png', // 导航栏logo
   repo: 'fujieid/jap-wiki', // 导航栏右侧生成Github链接
-  searchMaxSuggestions: 10, // 搜索结果显示最大数
+  searchMaxSuggestions: 20, // 搜索结果显示最大数
   lastUpdated: 'Last Updated', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
   docsDir: 'docs', // 编辑的文件夹
   editLinks: true, // 启用编辑
@@ -35,10 +35,10 @@ module.exports = {
   // ],
   // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 => 方格 | 2 => 横线 | 3 => 竖线 | 4 => 左斜线 | 5 => 右斜线 | 6 => 点状
 
-  // updateBar: { // 最近更新栏
-  //   showToArticle: true, // 显示到文章页底部，默认true
-  //   moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
-  // },
+  updateBar: { // 最近更新栏
+    showToArticle: true, // 显示到文章页底部，默认true
+    moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
+  },
   // rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
   // sidebarOpen: false, // 初始状态是否打开侧边栏，默认true
   // pageButton: false, // 是否显示快捷翻页按钮，默认true
@@ -51,12 +51,12 @@ module.exports = {
     name: 'FuJie Team', // 必需
     link: 'https://github.com/fujieid', // 可选的
   },
-  // blogger: {
-  //   // 博主信息，显示在首页侧边栏
-  //   avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-  //   name: 'Evan Xu',
-  //   slogan: '前端界的小学生',
-  // },
+  blogger: {
+    // 博主信息，显示在首页侧边栏
+    avatar: '/fujie-team.png',
+    name: 'FuJie Team',
+    slogan: '以开源的形式赋能开发者. Just auth into any app.',
+  },
   social: {
     // 社交图标，显示于博主信息栏和页脚栏
     // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
