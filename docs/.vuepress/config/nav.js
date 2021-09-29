@@ -39,6 +39,12 @@ module.exports = [
                     {link: '/ids/error_code/', text: '错误代码'},
                 ],
             },
+            {
+                text: 'starter',
+                items: [
+                    {link: '/starter/jap-spring-boot-starter/', text: 'jap-spring-boot-starter'},
+                ],
+            },
         ],
     },
     {
@@ -96,12 +102,12 @@ module.exports = [
     {
         text: '社区',
         items: [
+            {text: '数据看板🔥', link: '/community/kanban/'},
             {text: '贡献指南', link: '/community/contribution/'},
             // {text: '我们需要什么？', link: '/community/weneed/'},
             // {text: '成员相关', link: '/community/members/'},
             {text: '行为准则', link: '/community/code-of-conduct/'},
             {text: '用户权益', link: '/community/user-rights/'},
-            {text: '数据看板', link: '/community/kanban/'},
             {text: '贡献者们', link: '/community/contributors/'},
             {text: '社区配套', link: 'https://gitee.com/fujieid'},
         ],
@@ -111,6 +117,7 @@ module.exports = [
         items: [
             { text: '教程', link: '/blog/tutorials/' },
             { text: '投稿', link: '/blog/contribution/' },
+            { text: '资讯', link: '/blog/news/' },
         ],
     },
     {
