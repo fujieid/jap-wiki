@@ -5,6 +5,7 @@ module.exports = [
   ['meta', { name: 'keywords', content: 'JAP,JustAuth,第三方授权登录,OAuth,SAML,登录认证'}],
   ['meta', { name: 'description', content: 'JAP 是一款开源的认证中间件，基于模块化设计，并且与业务高度解耦，使用起来非常灵活，开发者可以毫不费力地将 JAP 集成到任何 web 应用程序中。'}],
   ['meta', { name: 'baidu-site-verification', content: 'code-OmTOoMHYB6' }], // 百度统计的站长验证
+  ['meta', { name: 'baidu_union_verify', content: '545c956c46d42c97d0d712b826c7125c' }], // 百度统计的站长验证
   ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
   ['script', {}, `
              var _hmt = _hmt || [];

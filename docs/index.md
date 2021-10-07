@@ -4,8 +4,8 @@ sidebar: false
 #heroImage: /img/logo.png
 heroText: JustAuthPlus
 tagline: 一款开源的登录认证中间件，支持 Form、 Auth2.0、OIDC、Http Basic、Digest、Bearer、LDAP、SAML、MFA、SSO 等 
-actionText: 数据看板 →
-actionLink: /community/kanban/
+actionText: 立即开始 →
+actionLink: /guide/
 # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式
 # 提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 # bannerBg: background:url(/img/banner.jpg) center center / cover no-repeat;

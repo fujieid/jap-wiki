@@ -104,8 +104,6 @@ module.exports = [
         items: [
             {text: '数据看板🔥', link: '/community/kanban/'},
             {text: '贡献指南', link: '/community/contribution/'},
-            // {text: '我们需要什么？', link: '/community/weneed/'},
-            // {text: '成员相关', link: '/community/members/'},
             {text: '行为准则', link: '/community/code-of-conduct/'},
             {text: '用户权益', link: '/community/user-rights/'},
             {text: '贡献者们', link: '/community/contributors/'},
