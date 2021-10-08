@@ -3,7 +3,7 @@ module.exports = [
     {text: '首页', link: '/'},
     {
         text: '📖 白皮书',
-        link: 'https://justauth.plus/paper/JAP-paper-V1.0.0.pdf',
+        link: 'https://justauth.plus/paper/jap-paper-latest.pdf',
         target: '_blank'
     },
     {
