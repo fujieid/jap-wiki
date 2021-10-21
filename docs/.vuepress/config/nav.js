@@ -43,6 +43,10 @@ module.exports = [
                 text: 'starter',
                 items: [
                     {link: '/starter/jap-spring-boot-starter/', text: 'jap-spring-boot-starter'},
+                    {link: '/starter/jap-simple-spring-boot-starter/', text: 'jap-simple-spring-boot-starter'},
+                    {link: '/starter/jap-social-spring-boot-starter/', text: 'jap-social-spring-boot-starter'},
+                    {link: '/starter/jap-oauth2-spring-boot-starter/', text: 'jap-oauth2-spring-boot-starter'},
+                    {link: '/starter/jap-oidc-spring-boot-starter/', text: 'jap-oidc-spring-boot-starter'},
                 ],
             },
         ],
