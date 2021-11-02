@@ -21,6 +21,7 @@ module.exports = [
                     {text: '使用jap-sso', link: '/quickstart/jap-sso/'},
                     {text: '使用jap-mfa', link: '/quickstart/jap-mfa/'},
                     {text: '使用jap-http-api', link: '/quickstart/jap-http-api/'},
+                    {text: '使用jap-ldap', link: '/quickstart/jap-ldap/'},
                     {text: '错误代码', link: '/quickstart/error_code/'}
                 ],
             },
