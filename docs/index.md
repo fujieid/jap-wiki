@@ -1,9 +1,9 @@
 ---
 home: true
 sidebar: false
-#heroImage: /img/logo.png
+heroImage: /img/logo.png
 heroText: JustAuthPlus
-tagline: 一款开源的登录认证中间件，支持 Form、 Auth2.0、OIDC、Http Basic、Digest、Bearer、LDAP、SAML、MFA、SSO 等 
+tagline: 一款开源的登录认证中间件，支持 Form、 OAuth2.0、OIDC、Http（Basic、Digest、Bearer）、LDAP、SAML、MFA、SSO 等 
 actionText: 立即开始 →
 actionLink: /guide/
 # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式
@@ -24,20 +24,21 @@ features: # 可选的
 - title: 社会化平台登录
   details: 基于 JustAuth，支持国内外数十家知名的第三方平台的第三方登录。
   link: /quickstart/jap-social/
-- title: 账号密码登录
-  details: 支持本地系统账号密码的登录，支持“记住我”。
-  link: /quickstart/jap-simple/
+- title: LDAP 登录
+  details: 支持使用 LDAP 中的用户进行身份认证，适配 LDAP 中所有标准密码加密类型。
+  link: /quickstart/jap-ldap/
 - title: 单点登录
   details: 内置单点登录功能，一点登录，处处通行。
   link: /quickstart/jap-sso/
+- title: 账号密码登录
+  details: 支持本地系统账号密码的登录，支持“记住我”。
+  link: /quickstart/jap-simple/
 - title: API 登录
   details: 支持 Basic、Digest 和 Bearer 等方式
   link: /quickstart/jap-http-api/
 - title: 多因素认证（MFA）
   details: 支持 TOTP、手机验证码、邮箱验证码等多因素认证。
   link: /quickstart/jap-mfa/
-- title: LDAP 登录
-  details: 支持 LDAP 方式的登录认证
 - title: SAML 登录
   details: 支持 SAML 协议的登录认证
 - title: 模块化开发
