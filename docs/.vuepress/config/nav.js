@@ -53,40 +53,6 @@ module.exports = [
         ],
     },
     {
-        text: '旧版v1.0.4',
-        link: '/v1.0.4/guide/',
-        items: [
-            {text: '名词解释', link: '/v1.0.4/guide/explain/'},
-            {
-                text: '快速开始',
-                items: [
-                    {text: '使用jap-simple', link: '/v1.0.4/quickstart/jap-simple/'},
-                    {text: '使用jap-social', link: '/v1.0.4/quickstart/jap-social/'},
-                    {text: '使用jap-oauth2', link: '/v1.0.4/quickstart/jap-oauth2/'},
-                    {text: '使用jap-oidc', link: '/v1.0.4/quickstart/jap-oidc/'},
-                    {text: '使用jap-sso', link: '/v1.0.4/quickstart/jap-sso/'},
-                    {text: '使用jap-mfa', link: '/v1.0.4/quickstart/jap-mfa/'},
-                    {text: '错误代码', link: '/v1.0.4/quickstart/error_code/'}
-                ],
-            },
-            {
-                text: 'IDS',
-                items: [
-                    {link: '/v1.0.4/ids/', text: '简介'},
-                    {link: '/v1.0.4/ids/quickstart/', text: '快速开始'},
-                    {link: '/v1.0.4/ids/scope/', text: '自定义scope'},
-                    {link: '/v1.0.4/ids/custom-login-page/', text: '自定义登录页面'},
-                    {link: '/v1.0.4/ids/custom-confirm-page/', text: '自定义确认授权页面'},
-                    {link: '/v1.0.4/ids/cache/', text: '自定义缓存'},
-                    {link: '/v1.0.4/ids/jwks/', text: '自定义Token加密密钥'},
-                    {link: '/v1.0.4/ids/pkce/', text: '使用PKCE模式'},
-                    {link: '/v1.0.4/ids/auto-approve/', text: '自动授权'},
-                    {link: '/v1.0.4/ids/error_code/', text: '错误代码'},
-                ],
-            },
-        ],
-    },
-    {
         text: '集成案例',
         link: '/demo/',
         items: [

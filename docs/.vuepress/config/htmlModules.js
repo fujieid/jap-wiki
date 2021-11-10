@@ -19,92 +19,21 @@
  */
 
 module.exports = {
-  homeSidebarB:
-      `<div style="padding: 0.95rem">
-    <p style="
-      color: var(--textColor);
-      opacity: 0.9;
-      font-size: 20px;
-      font-weight: bold;
-      margin: 0 0 8px 0;
-    ">公众号</p>
-    <img src="codeacode.jpg"  style="width:100%;" />
-    <p>
-        “码一码”公众号，更多内容，等你去探索~
-    </p>
-    </div>`,
-  // `<!-- 纵向自适应 -->
-  // <ins class="adsbygoogle"
-  //     style="display:block;padding: 0.95rem;"
-  //     data-ad-client="ca-pub-7828333725993554"
-  //     data-ad-slot="7802654582"
-  //     data-ad-format="auto"
-  //     data-full-width-responsive="true"></ins>
-  // <script>
-  //     (adsbygoogle = window.adsbygoogle || []).push({});
-  // </script>`,
-  // sidebarT:
-  //   `<!--  固定100% * 150px可显示，max-height:150px 未见显示-->
-  //   <ins class="adsbygoogle"
-  //         style="display:inline-block;width:100%;max-height:150px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="6625304284"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
-  // sidebarB:
-  //   `<!-- 正方形 -->
-  //     <ins class="adsbygoogle"
-  //         style="display:block"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="3508773082"
-  //         data-ad-format="auto"
-  //         data-full-width-responsive="true"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
-  // pageT:
-  //   `<!-- 固定100% * 90px可显示，max-height:90px未见显示-->
-  //    <ins class="adsbygoogle"
-  //         style="display:inline-block;width:100%;max-height:90px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="6625304284"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
-  // // pageTshowMode: 'article',
-  // pageB:
-  //   `<!-- 横向自适应 -->
-  //     <ins class="adsbygoogle"
-  //         style="display:block"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="6620245489"
-  //         data-ad-format="auto"
-  //         data-full-width-responsive="true"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
+  homeSidebarB: `<div class="wwads-cn wwads-horizontal" data-id="125" style="max-width:350px;margin-top: 0;"></div>`,
+  // 全局左侧边栏顶部，固定100% * 150px可显示，max-height:150px 未见显示
+  // sidebarT: `<div class="wwads-cn wwads-horizontal" data-id="125" style="width:100%;max-width:150px"></div>`,
+  // 全局左侧边栏底部
+  // sidebarB: `<div class="wwads-cn wwads-horizontal" data-id="125" style="width:100%;max-width:150px"></div>`,
+  // 全局页面顶部， 横向自适应 固定100% * 90px可显示，max-height:90px未见显示
+  pageT: `<div class="wwads-cn wwads-horizontal" data-id="125" style="width:100%;height:90px;"></div>`,
+  // pageTshowMode: 'article',
+  // 全局页面底部， 横向自适应 固定100% * 90px可显示，max-height:90px未见显示
+  // pageB: `<div class="wwads-cn wwads-horizontal" data-id="125" style="width:100%;height:90px;"></div>`,
   // pageBshowMode: 'article',
-  // windowLB: // 会遮挡部分侧边栏
-  //   `<!-- 固定200*200px -->
-  //     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  //     <ins class="adsbygoogle"
-  //         style="display:inline-block;width:200px;height:200px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="6625304284"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
-  // windowRB:
-  //   `<!-- 固定160*160px -->
-  //     <ins class="adsbygoogle"
-  //         style="display:inline-block;max-width:160px;max-height:160px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="8377369658"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>
-  //     `,
+  // 会遮挡部分侧边栏 全局窗口左下角 固定200*200px
+  // windowLB: `<div class="wwads-cn wwads-horizontal" data-id="125" style="width:200px;height:200px;"></div>`,
+  // 全局窗口右下角 固定200*200px
+  // windowRB: `<div class="wwads-cn wwads-horizontal" data-id="125" style="width:200px;height:200px;"></div>`,
 }
 
 
